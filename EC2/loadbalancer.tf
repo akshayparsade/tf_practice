@@ -27,7 +27,7 @@ resource "aws_lb_target_group" "tg_cloth" {
   health_check {
     path = "/cloth/"
     port = 80
-    protocol = "TCP"
+    protocol = "HTTP"
   }
 }
 
