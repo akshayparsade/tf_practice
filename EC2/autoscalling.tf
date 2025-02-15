@@ -6,6 +6,6 @@ resource "aws_launch_configuration" "lc-home" {
     user_data = <<EOF
         #!/bin/bash
         apt install httpd -y
-        systemctl 
+        systemctl start httpsd
   
 }
