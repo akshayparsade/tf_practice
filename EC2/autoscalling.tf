@@ -41,6 +41,7 @@ resource "aws_launch_configuration" "lc-laptop" {
         apt install httpd -y
         systemctl start httpd
         systemctl enable httpd
+        mkdir 
         echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/index.html
     EOF    
 }
