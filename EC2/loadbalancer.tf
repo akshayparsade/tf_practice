@@ -65,12 +65,12 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_home" {
 
   condition {
     path_pattern {
-      values = ["/laptop/*"]
+      values = ["/home/*"]
     }
   }
 }
 
-resource "aws_lb_listener_rule" "my_lb_lisener_rule_home" {
+resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
   listener_arn = aws_lb_listener.my_lb_lisener.arn
   priority     = 100
 
