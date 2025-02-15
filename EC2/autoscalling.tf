@@ -1,4 +1,4 @@
-resource "aws_security_group" "lc_home" {
+resource "aws_security_group" "lc_sg" {
   name = "allow httpd "
     description = "HTTP port"
     ingress {                               
