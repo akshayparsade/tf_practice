@@ -11,3 +11,7 @@ variable "key_name" {
     default = "Ubuntu"
   
 }
+
+variable "s" {
+  
+}
