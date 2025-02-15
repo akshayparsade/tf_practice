@@ -21,6 +21,6 @@ variable "subnet_id_2" {
 }
 
 variable "vpc_id" {
-    default = 
+    default = ""
   
 }
