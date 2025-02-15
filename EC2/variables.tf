@@ -12,6 +12,6 @@ variable "key_name" {
   
 }
 
-variable "s" {
+variable "subnet_id_1" {
   
 }
