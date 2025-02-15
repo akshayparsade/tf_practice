@@ -69,5 +69,5 @@ output "demo" {
 }
 
 output "public_ip" {
-   
+   value = aws
 }
