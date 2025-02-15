@@ -5,6 +5,6 @@ resource "aws_launch_configuration" "lc-home" {
     security_groups = var.security_groups
     user_data = <<EOF
         #!/bin/bash
-        
+        apt 
   
 }
