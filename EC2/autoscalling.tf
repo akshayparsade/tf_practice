@@ -86,6 +86,7 @@ resource "aws_autoscaling_group" "asg_home" {
 }
 
 resource "aws_autoscaling_group" "asg_laptop" {
+    
   desired_capacity   = 1
   max_size           = 2
   min_size           = 1
