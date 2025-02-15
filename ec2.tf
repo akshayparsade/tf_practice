@@ -69,5 +69,5 @@ output "demo" {
 }
 
 output "public_ip" {
-   value = aws_instance.my_ec2.p
+   value = aws_instance.my_ec2.public_ip
 }
