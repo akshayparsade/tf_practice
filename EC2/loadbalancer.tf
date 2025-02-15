@@ -31,7 +31,7 @@ resource "aws_lb_target_group" "tg_cloth" {
   }
 }
 
-resource "aws_lb" "test" {
+resource "aws_lb" "my_lb" {
   name               = "test-lb-tf"
   internal           = false
   load_balancer_type = "application"
