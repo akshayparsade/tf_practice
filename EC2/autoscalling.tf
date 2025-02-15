@@ -61,7 +61,7 @@ resource "aws_launch_configuration" "lc-cloth" {
     EOF    
 }
 
-resource "aws_autoscaling_group" "example" {
+resource "aws_autoscaling_group" "asg_home" {
   availability_zones = ["us-east-1a"]
   desired_capacity   = 1
   max_size           = 2
