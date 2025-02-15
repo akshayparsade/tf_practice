@@ -3,6 +3,6 @@ variable "image_id" {
   
 }
 
-variable "" {
+variable "in" {
   
 }
