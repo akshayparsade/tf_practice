@@ -43,7 +43,8 @@ resource "aws_instance" "my_ec2" {
     }
    user_data = <<-EOF 
            #!/bin/bash
-           yum install 
+           yum install httpd -y
+           
 }
 
 variable "ami" {
