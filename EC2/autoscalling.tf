@@ -1,3 +1,3 @@
-resource "" "name" {
+resource "aws_launch_configuration" "my-" {
   
 }
