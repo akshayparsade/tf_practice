@@ -13,7 +13,7 @@ resource "aws_launch_configuration" "lc-home" {
 }
 
 resource "aws_security_group" "lc_home" {
-  name = "my-sg"
+  name = "allow httpd "
     description = "HTTP port"
     ingress {                               
         from_port        = 80
