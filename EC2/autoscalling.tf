@@ -35,7 +35,7 @@ resource "aws_launch_configuration" "lc-laptop" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_name
-    security_groups = .lc_home.iaws_security_groupd
+    security_groups = aws_security_group.my_sg.id
     user_data = <<EOF
         #!/bin/bash
         apt install httpd -y
