@@ -9,5 +9,5 @@ resource "aws_launch_configuration" "lc-home" {
         systemctl start httpd
         systemctl enable httpd
         echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/index.html
-        
+    EOF    
 }
