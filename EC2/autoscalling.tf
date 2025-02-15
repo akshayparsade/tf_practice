@@ -1,3 +1,4 @@
-resource "aws_launch_configuration" "my-" {
+resource "aws_launch_configuration" "lc-home" {
+    
   
 }
