@@ -17,13 +17,13 @@ provider "aws" {
 resource "aws_security_group" "my_sg" {
     name = "my-sg"
     description = "HTTP port"
-    ingress = {                               # for inbound trafffic
+    ingress {                               # for inbound trafffic
         from_port        = 80
         to_port          = 80
         protocol         = "-1"  # TCP / UPD / -1 for all 
         cidr_blocks      = ["0.0.0.0/0"]
     }
-    egress =  {                                  # for outbound trafic
+    egress {                                  # for outbound trafic
         from_port        = 0
         to_port          = 0
         protocol         = "-1"
