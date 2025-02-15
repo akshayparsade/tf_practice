@@ -72,7 +72,7 @@ resource "aws_autoscaling_group" "asg_home" {
   }
 
   resource "aws_autoscaling_policy" "asg_policy" {
-  autoscaling_group_name = "my-test-asg"
+  autoscaling_group_name = 
   name                   = "foo"
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
