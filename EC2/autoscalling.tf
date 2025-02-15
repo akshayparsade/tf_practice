@@ -60,3 +60,14 @@ resource "aws_launch_configuration" "lc-cloth" {
         echo <h1> SALE SALE SALE ON Cloths </h1> > /var/wwww/html/cloth/index.html
     EOF    
 }
+
+resource "aws_autoscaling_group" "example" {
+  availability_zones = ["us-east-1a"]
+  desired_capacity   = 1
+  max_size           = 2
+  min_size           = 1
+
+  launch_template {
+    id      = aws_launch_template.example.id
+    version = aws_launch_template.example.latest_version
+  }
