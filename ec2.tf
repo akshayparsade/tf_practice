@@ -59,7 +59,7 @@ variable "key_pair" {
     default = "Ubuntu"
   
 }
-variable "sg" {
-    type = list
-    default = ["default"]
-}
+# variable "sg" {
+#     type = list
+#     default = ["default"]
+# }
