@@ -98,7 +98,7 @@ resource "aws_autoscaling_group" "asg_laptop" {
 
   }
 
-  resource "aws_autoscaling_policy" "asg_policy" {
+  resource "aws_autoscaling_policy" "asg_policy_laptop" {
   autoscaling_group_name = aws_autoscaling_group.asg_laptop.name
   name                   = "asg_policy_laptop"
   policy_type            = "PredictiveScaling"
