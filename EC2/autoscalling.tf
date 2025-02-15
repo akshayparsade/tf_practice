@@ -50,7 +50,7 @@ resource "aws_launch_configuration" "lc-cloth" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_name
-    security_groups = aws_security_group.lc_home.id
+    security_groups = aws_security_group.my.id
     user_data = <<EOF
         #!/bin/bash
         apt install httpd -y
