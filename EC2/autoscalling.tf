@@ -123,7 +123,7 @@ resource "aws_autoscaling_group" "asg_cloth" {
   target_group_arns = [ aws_lb_target_group.tg_cloth.arn ]
 
   }
-  resource "aws_autoscaling_policy" "asg_policy" {
+  resource "aws_autoscaling_policy" "asg_policy_cloth" {
   autoscaling_group_name = aws_autoscaling_group.asg_cloth.name
   name                   = "asg_policy_cloth"
   policy_type            = "PredictiveScaling"
