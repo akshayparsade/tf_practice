@@ -63,3 +63,6 @@ variable "key_pair" {
 #     type = list
 #     default = ["default"]
 # }
+output "demo" {
+  
+}
