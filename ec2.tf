@@ -67,3 +67,7 @@ output "demo" {
     value = "hellloooooooooooo"
   
 }
+
+output "name" {
+  
+}
