@@ -8,5 +8,5 @@ resource "aws_launch_configuration" "lc-home" {
         apt install httpd -y
         systemctl start httpd
         systemctl enable httpd
-        echo 
+        echo <h1>
 }
