@@ -57,6 +57,6 @@ resource "aws_launch_configuration" "lc-cloth" {
         systemctl start httpd
         systemctl enable httpd
         mkdir /var/www/html/cloth
-        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/cloth/index.html
+        echo <h1> SALE SALE SALE ON  </h1> > /var/wwww/html/cloth/index.html
     EOF    
 }
