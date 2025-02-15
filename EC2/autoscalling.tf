@@ -84,7 +84,7 @@ resource "aws_autoscaling_group" "asg_home" {
   }
 }
 
-resource "aws_autoscaling_group" "asg_home" {
+resource "aws_autoscaling_group" "asg_l" {
   availability_zones = ["us-east-1a"]
   desired_capacity   = 1
   max_size           = 2
