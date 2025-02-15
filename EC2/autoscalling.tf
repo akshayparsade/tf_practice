@@ -68,7 +68,7 @@ resource "aws_autoscaling_group" "asg_home" {
   min_size           = 1
   launch_configuration = aws_launch_configuration.lc-home
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
-  target_group_arns = [ aws ]
+  target_group_arns = [ aws_lb.my_lb ]
 
   }
   resource "aws_autoscaling_policy" "asg_policy" {
