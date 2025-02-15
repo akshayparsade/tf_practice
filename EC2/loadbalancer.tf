@@ -4,6 +4,7 @@ resource "aws_lb_target_group" "tg_home" {
   protocol = "HTTP"
   health_check {
     path = "/"
-    port = 
+    port = 80
+    protocol = "TCP"
   }
 }
