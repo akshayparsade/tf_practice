@@ -11,3 +11,7 @@ resource "aws_launch_configuration" "lc-home" {
         echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/index.html
     EOF    
 }
+
+resource "" "name" {
+  
+}
