@@ -46,7 +46,7 @@ resource "aws_launch_configuration" "lc-laptop" {
     EOF    
 }
 
-resource "aws_launch_configuration" "lc-laptop" {
+resource "aws_launch_configuration" "lc-cloth" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_name
