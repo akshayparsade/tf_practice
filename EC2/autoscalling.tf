@@ -81,22 +81,6 @@ resource "aws_autoscaling_group" "asg_home" {
       predefined_load_metric_specification {
         predefined_metric_type = "ASGTotalCPUUtilization"
       }
-      customized_scaling_metric_specification {
-        metric_data_queries {
-          id = "scaling"
-          metric_stat {
-            metric {
-              metric_name = "CPUUtilization"
-              namespace   = "AWS/EC2"
-              dimensions {
-                name  = "AutoScalingGroupName"
-                value = "my-test-asg"
-              }
-            }
-            stat = "Average"
-          }
-        }
-      }
     }
   }
 }
