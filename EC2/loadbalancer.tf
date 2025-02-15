@@ -92,7 +92,7 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_cloth" {
 
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.tg.arn
+    target_group_arn = aws_lb_target_group.tg_cloth.arn
   }
 
   condition {
