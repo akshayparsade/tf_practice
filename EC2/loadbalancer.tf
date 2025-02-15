@@ -97,7 +97,7 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_cloth" {
 
   condition {
     path_pattern {
-      values = ["//*"]
+      values = ["/cloth/*"]
     }
   }
 }
