@@ -41,7 +41,8 @@ resource "aws_instance" "my_ec2" {
     tags = {
       "name" = "tf_instance"
     }
-   user_data = <<-
+   user_data = <<-EOF 
+                
 }
 
 variable "ami" {
