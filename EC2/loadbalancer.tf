@@ -55,7 +55,7 @@ resource "aws_lb_listener" "my_lb_lisener" {
 }
 
 resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
-  listener_arn = aws_lb_listener.my_lb_lisener
+  listener_arn = aws_lb_listener.my_lb_lisener.arn
   priority     = 100
 
   action {
