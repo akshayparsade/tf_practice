@@ -62,7 +62,7 @@ resource "aws_launch_configuration" "lc-cloth" {
 }
 
 resource "aws_autoscaling_group" "asg_home" {
-  name = "asg-name"  
+  name =              "asg-name"  
   desired_capacity   = 1
   max_size           = 2
   min_size           = 1
