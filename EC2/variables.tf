@@ -3,6 +3,7 @@ variable "image_id" {
   
 }
 
-variable "in" {
+variable "instance_type" {
+    default = 
   
 }
