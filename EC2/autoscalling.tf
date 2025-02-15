@@ -56,7 +56,7 @@ resource "aws_launch_configuration" "lc-cloth" {
         apt install httpd -y
         systemctl start httpd
         systemctl enable httpd
-        mkdir /var/www/html/laptop
-        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/laptop/index.html
+        mkdir /var/www/html/cloth
+        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/cloth/index.html
     EOF    
 }
