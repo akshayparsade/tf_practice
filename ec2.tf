@@ -68,6 +68,6 @@ output "demo" {
   
 }
 
-output "name" {
+output "pu" {
   
 }
