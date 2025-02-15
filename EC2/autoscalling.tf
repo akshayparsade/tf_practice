@@ -117,7 +117,7 @@ resource "aws_autoscaling_group" "asg_cloth" {
   min_size           = 1
   launch_configuration = aws_launch_configuration.lc-cloth
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
-    target_group_arns = [ aws_lb_target_group.tg_home.arn ]
+  target_group_arns = [ aws_lb_target_group.tg_cloth.arn ]
 
 
   }
