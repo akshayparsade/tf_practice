@@ -66,8 +66,7 @@ resource "aws_autoscaling_group" "example" {
   desired_capacity   = 1
   max_size           = 2
   min_size           = 1
+  launch_configuration = aws_launch_configuration.foobar.name
+  vpc_zone_identifier  = [aws_subnet.example1.id, aws_subnet.example2.id]
 
-  launch_template {
-    id      = aws_launch_template.example.id
-    version = aws_launch_template.example.latest_version
   }
