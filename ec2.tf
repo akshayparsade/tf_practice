@@ -56,6 +56,7 @@ variable "instance_type" {
     description = "instance_type:t2.micro"
 
 }
+
 variable "key_pair" {
     default = "Ubuntu"
   
