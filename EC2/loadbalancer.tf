@@ -38,7 +38,7 @@ resource "aws_lb" "my_lb" {
   security_groups    = [aws_security_group.my_sg.id]
   subnets            = [var.subnet_id_1, var.subnet_id_2]
   tags = {
-    
+    app = ""
     Environment = "production"
   }
 }
