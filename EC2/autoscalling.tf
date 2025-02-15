@@ -46,3 +46,17 @@ resource "aws_launch_configuration" "lc-laptop" {
     EOF    
 }
 
+resource "aws_launch_configuration" "lc-laptop" {
+    image_id = var.image_id
+    instance_type = var.instance_type
+    key_name = var.key_name
+    security_groups = aws_security_group.lc_home.id
+    user_data = <<EOF
+        #!/bin/bash
+        apt install httpd -y
+        systemctl start httpd
+        systemctl enable httpd
+        mkdir /var/www/html/laptop
+        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/laptop/index.html
+    EOF    
+}
