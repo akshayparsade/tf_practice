@@ -83,3 +83,49 @@ resource "aws_autoscaling_group" "asg_home" {
     }
   }
 }
+
+resource "aws_autoscaling_group" "asg_home" {
+  availability_zones = ["us-east-1a"]
+  desired_capacity   = 1
+  max_size           = 2
+  min_size           = 1
+  launch_configuration = aws_launch_configuration.lc-home
+  vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
+
+  }
+  resource "aws_autoscaling_policy" "asg_policy" {
+  autoscaling_group_name = aws_autoscaling_group.asg_home.name
+  name                   = "foo"
+  policy_type            = "PredictiveScaling"
+  predictive_scaling_configuration {
+    metric_specification {
+      target_value = 10
+      predefined_load_metric_specification {
+        predefined_metric_type = "ASGTotalCPUUtilization"
+      }
+    }
+  }
+}
+
+resource "aws_autoscaling_group" "asg_home" {
+  availability_zones = ["us-east-1a"]
+  desired_capacity   = 1
+  max_size           = 2
+  min_size           = 1
+  launch_configuration = aws_launch_configuration.lc-home
+  vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
+
+  }
+  resource "aws_autoscaling_policy" "asg_policy" {
+  autoscaling_group_name = aws_autoscaling_group.asg_home.name
+  name                   = "foo"
+  policy_type            = "PredictiveScaling"
+  predictive_scaling_configuration {
+    metric_specification {
+      target_value = 10
+      predefined_load_metric_specification {
+        predefined_metric_type = "ASGTotalCPUUtilization"
+      }
+    }
+  }
+}
