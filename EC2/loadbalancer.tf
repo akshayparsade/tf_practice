@@ -11,7 +11,7 @@ resource "aws_lb_target_group" "tg_home" {
 }
 
 resource "aws_lb_target_group" "tg_laptop" {
-  name     = "tg_laptop"
+  name     = "tg-laptop"
   port     = 80
   protocol = "HTTP"
   vpc_id = var.vpc_id
@@ -23,7 +23,7 @@ resource "aws_lb_target_group" "tg_laptop" {
 }
 
 resource "aws_lb_target_group" "tg_cloth" {
-  name     = "tg_cloth"
+  name     = "tg-cloth"
   port     = 80
   protocol = "HTTP"
   vpc_id = var.vpc_id
