@@ -66,7 +66,7 @@ resource "aws_autoscaling_group" "asg_home" {
   desired_capacity   = 1
   max_size           = 2
   min_size           = 1
-  launch_configuration = aws_launch_configuration.lc-home.arn
+  launch_configuration = aws_launch_configuration.lc-home.name
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
   target_group_arns = [ aws_lb_target_group.tg_home.arn ]
 
