@@ -1,3 +1,3 @@
-output "lb" {
+output "lb_endpint" {
   
 }
