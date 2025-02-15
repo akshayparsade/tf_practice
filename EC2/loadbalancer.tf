@@ -86,13 +86,13 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
   }
 }
 
-resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
+resource "aws_lb_listener_rule" "my_lb_lisener_rule_cloth" {
   listener_arn = aws_lb_listener.my_lb_lisener.arn
   priority     = 100
 
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.tg_home.arn
+    target_group_arn = aws_lb_target_group.tg.arn
   }
 
   condition {
