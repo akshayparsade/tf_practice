@@ -103,7 +103,7 @@ resource "aws_autoscaling_group" "asg_laptop" {
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
     metric_specification {
-      target_value = 10
+      target_value = 50
       predefined_load_metric_specification {
         predefined_metric_type = "ASGTotalCPUUtilization"
       }
