@@ -120,7 +120,6 @@ resource "aws_autoscaling_group" "asg_cloth" {
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
   target_group_arns = [ aws_lb_target_group.tg_cloth.arn ]
 
-
   }
   resource "aws_autoscaling_policy" "asg_policy" {
   autoscaling_group_name = aws_autoscaling_group.asg_cloth.name
