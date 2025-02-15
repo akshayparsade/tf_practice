@@ -92,7 +92,7 @@ resource "aws_autoscaling_group" "asg_laptop" {
   min_size           = 1
   launch_configuration = aws_launch_configuration.lc-laptop
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
-    target_group_arns = [ aws_lb_target_group.tg_home.arn ]
+  target_group_arns = [ aws_lb_target_group.tg_laptop ]
 
 
   }
