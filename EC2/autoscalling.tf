@@ -42,7 +42,7 @@ resource "aws_launch_configuration" "lc-laptop" {
         systemctl start httpd
         systemctl enable httpd
         mkdir /var/www/html/laptop
-        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/index.html
+        echo <h1> Welcome to Akkitech </h1> > /var/wwww/html/laptop/index.html
     EOF    
 }
 
