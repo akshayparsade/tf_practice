@@ -65,7 +65,7 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
 
   condition {
     path_pattern {
-      values = ["/static/*"]
+      values = ["/laptop/*"]
     }
   }
 }
