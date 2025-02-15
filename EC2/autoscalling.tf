@@ -15,13 +15,13 @@ resource "aws_launch_configuration" "lc-home" {
 resource "aws_security_group" "lc_home" {
   name = "my-sg"
     description = "HTTP port"
-    ingress {                               # for inbound trafffic
+    ingress {                               
         from_port        = 80
         to_port          = 80
-        protocol         = "-1"  # TCP / UPD / -1 for all 
+        protocol         = "-1"  
         cidr_blocks      = ["0.0.0.0/0"]
     }
-    egress {                                  # for outbound trafic
+    egress {                             
         from_port        = 0
         to_port          = 0
         protocol         = "-1"
