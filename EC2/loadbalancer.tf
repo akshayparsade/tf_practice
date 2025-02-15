@@ -69,3 +69,35 @@ resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
     }
   }
 }
+
+resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
+  listener_arn = aws_lb_listener.my_lb_lisener.arn
+  priority     = 100
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.tg_home.arn
+  }
+
+  condition {
+    path_pattern {
+      values = ["/laptop/*"]
+    }
+  }
+}
+
+resource "aws_lb_listener_rule" "my_lb_lisener_rule_laptop" {
+  listener_arn = aws_lb_listener.my_lb_lisener.arn
+  priority     = 100
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.tg_home.arn
+  }
+
+  condition {
+    path_pattern {
+      values = ["/laptop/*"]
+    }
+  }
+}
