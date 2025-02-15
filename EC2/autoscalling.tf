@@ -12,6 +12,6 @@ resource "aws_launch_configuration" "lc-home" {
     EOF    
 }
 
-resource "aws_security_group" "lc_" {
+resource "aws_security_group" "lc_home" {
   
 }
