@@ -84,12 +84,12 @@ resource "aws_autoscaling_group" "asg_home" {
   }
 }
 
-resource "aws_autoscaling_group" "asg_l" {
+resource "aws_autoscaling_group" "asg_laptop" {
   availability_zones = ["us-east-1a"]
   desired_capacity   = 1
   max_size           = 2
   min_size           = 1
-  launch_configuration = aws_launch_configuration.lc-home
+  launch_configuration = aws_launch_configuration.lc-
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_id_2]
 
   }
