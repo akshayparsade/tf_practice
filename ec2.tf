@@ -46,7 +46,7 @@ resource "aws_instance" "my_ec2" {
            yum install httpd -y
            systemctl start httpd
            systemctl enable httpd
-           EOF   
+    EOF   
 }
 
 variable "ami" {
