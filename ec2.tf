@@ -41,7 +41,7 @@ resource "aws_instance" "my_ec2" {
     tags = {
       "name" = "tf_instance"
     }
-   user_data = <<-EOF 
+   user_data = <<EOF 
            #!/bin/bash
            yum install httpd -y
            systemctl start httpd
