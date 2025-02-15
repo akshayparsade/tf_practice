@@ -64,6 +64,6 @@ variable "key_pair" {
 #     default = ["default"]
 # }
 output "demo" {
-    
+    value = "hellloooooooooooo"
   
 }
