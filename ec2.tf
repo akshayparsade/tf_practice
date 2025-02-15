@@ -68,6 +68,6 @@ output "demo" {
   
 }
 
-output "pu" {
-  
+output "public_ip" {
+   
 }
