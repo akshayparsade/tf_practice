@@ -13,6 +13,6 @@ variable "key_pair" {
 variable "private_instance" {
   
 }
-variable "pub" {
+variable "public_instance" {
   
 }
