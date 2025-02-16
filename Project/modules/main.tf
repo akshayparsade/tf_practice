@@ -14,6 +14,6 @@ module "vpc_module" {
 
 module "ec2_module" {
     source = "./modules/ec2"
-    ami
+    ami= var.image_id
   
 }
