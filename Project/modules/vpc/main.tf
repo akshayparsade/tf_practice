@@ -15,7 +15,7 @@ resource "aws_internet_gateway" "my-vpc-gw" {
   vpc_id = var.aws_vpc.my-vpc.id
 
   tags = {
-    Name = "${var.project}-private-subnet"
+    Name = ""
   }
 }
 
