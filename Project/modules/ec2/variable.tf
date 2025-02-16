@@ -10,7 +10,7 @@ variable "security_group_id" {
 variable "key_pair" {
   
 }
-variable "private_instance_id" {
+variable "private_subnet_id" {
   
 }
 variable "public_instance" {
