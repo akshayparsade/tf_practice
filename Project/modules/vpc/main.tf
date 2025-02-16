@@ -11,7 +11,7 @@ resource "aws_vpc" "my-vpc" {
   }
 }
 
-resource "aws_internet_gateway" "my-vpc-gw" {
+resource "aws_internet_gateway" "igw" {
   vpc_id = var.aws_vpc.my-vpc.id
 
   tags = {
@@ -41,7 +41,7 @@ resource "aws_subnet" "public-subnet" {
 
 resource "aws_route_table" "sub-1a-rt" {
   vpc_id = aws_vpc.my-vpc.id
-  gatway_id = aws_internet_gateway.ig
+  gatway_id = aws_internet_gateway.igw
 
   tags = {
     Name = "${var.project}-rt"
