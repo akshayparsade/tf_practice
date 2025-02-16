@@ -15,7 +15,7 @@ resource "aws_internet_gateway" "my-vpc-gw" {
   }
 }
 
-resource "aws_subnet" "sub-1" {
+resource "aws_subnet" "sub-1a" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
 
@@ -24,7 +24,7 @@ resource "aws_subnet" "sub-1" {
   }
 }
 
-resource "aws_subnet" "main" {
+resource "aws_subnet" "sub" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
 
