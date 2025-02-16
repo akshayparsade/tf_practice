@@ -4,7 +4,8 @@ provider "aws" {
 }
 
 resource "aws_vpc" "my-vpc" {
-  cidr_block = var.cidr
+  cidr_block = var.cidr-ip
+  
 }
 
 resource "aws_internet_gateway" "my-vpc-gw" {
