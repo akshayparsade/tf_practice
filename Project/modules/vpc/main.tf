@@ -44,21 +44,3 @@ resource "aws_route_table" "sub-1a-rt" {
   }
 }
 
-resource "aws_route_table" "sub-1b-rt" {
-  vpc_id = aws_vpc.my-vpc.id
-  route = []
-
-  tags = {
-    Name = "example"
-  }
-}
-
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic and all outbound traffic"
-  vpc_id      = aws_vpc.main.id
-
-  tags = {
-    Name = "allow_tls"
-  }
-}
