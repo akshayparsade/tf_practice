@@ -21,7 +21,7 @@ resource "aws_internet_gateway" "my-vpc-gw" {
 
 resource "aws_subnet" "private-subnet" {
   vpc_id     = aws_vpc.my-vpc.id
-  cidr_block = "10.0.1.0/24"
+  cidr_block = var.
 
   tags = {
     Name = "${var.project}-private-subnet"
