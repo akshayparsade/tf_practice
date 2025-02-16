@@ -10,6 +10,6 @@ variable "env" {
   
 }
 
-variable "" {
+variable "pri" {
   
 }
