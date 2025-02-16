@@ -41,7 +41,7 @@ resource "aws_subnet" "public-subnet" {
 
 resource "aws_route_table" "sub-1a-rt" {
   vpc_id = aws_vpc.my-vpc.id
-  gatway_id = aws_internet_gateway.igw
+  gatway_id = aws_internet_gateway.igw.id
 
   tags = {
     Name = "${var.project}-rt"
