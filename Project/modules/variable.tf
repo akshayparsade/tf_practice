@@ -5,5 +5,5 @@ variable "project" {
    default = "cbz"
 }
 variable "env" {
-  default = ""
+  default = "prod"
 }
