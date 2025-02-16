@@ -7,6 +7,6 @@ module "vpc_module" {
     source = "./modules/vpc"
     cidr ="10.0.0.0/16"
     env = "cbz"
-    pri-sub-cidr = "10.0.1"
-    pub-sub-cidr =
+    pri-sub-cidr = "10.0.1.0/16"
+    pub-sub-cidr = ""
 }
