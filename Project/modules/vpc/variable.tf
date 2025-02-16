@@ -1,4 +1,7 @@
 variable "cidr-ip" {
-    
+
+}
+
+variable "" {
   
 }
