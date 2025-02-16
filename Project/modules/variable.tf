@@ -4,6 +4,6 @@ variable "vpc_cidr" {
 variable "project" {
    default = "cbz"
 }
-variable "" {
-  
+variable "env" {
+  default = ""
 }
