@@ -34,7 +34,7 @@ resource "aws_subnet" "sub-1b" {
 }
 
 resource "aws_route_table" "example" {
-  vpc_id = aws_vpc.example.id
+  vpc_id = aws_vpc.my-vpc.id
 
   route = []
 
