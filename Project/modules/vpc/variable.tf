@@ -10,6 +10,6 @@ variable "env" {
   
 }
 
-variable "pri-sub" {
+variable "pri-sub-cidr" {
   
 }
