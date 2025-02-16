@@ -1,6 +1,6 @@
 variable "image_id" {
   
 }
-variable "" {
+variable "instance_type" {
   
 }
