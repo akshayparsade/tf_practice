@@ -5,6 +5,6 @@ provider "aws" {
 
 module "vpc_module" {
     source = "./modules/vpc"
-    cidr =""
+    cidr ="10.0.0.0/"
   
 }
