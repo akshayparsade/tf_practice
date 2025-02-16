@@ -45,7 +45,7 @@ resource "aws_route_table" "sub-1a-rt" {
   route = []
 
   tags = {
-    Name = "${}"
+    Name = "${var.project}-rt"
   }
 }
 
