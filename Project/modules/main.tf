@@ -12,6 +12,7 @@ module "vpc_module" {
     pub-sub-cidr = var.pub_sub_cidr
 }
 
-module "ec2" {
+module "ec2_module" {
+    source = "value"
   
 }
