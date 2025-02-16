@@ -8,6 +8,6 @@ module "vpc_module" {
     cidr =
     project = "cbz"
     env = "env"
-    pri-sub-cidr = "10.0.1.0/16"
+    pri-sub-cidr = 
     pub-sub-cidr = "10.0.2.0/16"
 }
