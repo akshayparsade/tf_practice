@@ -4,6 +4,6 @@ provider "aws" {
 }
 
 module "vpc_module" {
-    source = "./vpc"
+    source = "./modvpc"
   
 }
