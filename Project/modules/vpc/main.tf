@@ -1,7 +1,3 @@
-provider "aws" {
-    region = "ap-south-1"
-  
-}
 
 resource "aws_vpc" "my-vpc" {
   cidr_block = var.cidr-ip.id
