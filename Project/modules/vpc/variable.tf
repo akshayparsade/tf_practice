@@ -6,6 +6,6 @@ variable "project" {
   
 }
 
-variable "" {
+variable "env" {
   
 }
