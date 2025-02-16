@@ -11,3 +11,7 @@ module "vpc_module" {
     pri-sub-cidr = var.pri_sub_cidr
     pub-sub-cidr = var.pub_sub_cidr
 }
+
+module "ec2" {
+  
+}
