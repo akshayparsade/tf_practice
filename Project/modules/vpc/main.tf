@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_vpc" "my-vpc" {
   cidr_block = var.cidr-ip
   tags = {
-    name
+    name = ""
   }
 }
 
