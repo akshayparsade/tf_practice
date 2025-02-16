@@ -9,5 +9,5 @@ module "vpc_module" {
     project = "cbz"
     env = "env"
     pri-sub-cidr = 
-    pub-sub-cidr = "10.0.2.0/16"
+    pub-sub-cidr = var.
 }
