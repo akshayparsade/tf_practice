@@ -8,7 +8,7 @@ resource "aws_vpc" "my-vpc" {
 }
 
 resource "aws_internet_gateway" "my-vpc-gw" {
-  vpc_id = aws_vpc..id
+  vpc_id = aws_vpc.my-vpc.id
 
   tags = {
     Name = "main"
