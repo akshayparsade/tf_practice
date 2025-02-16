@@ -2,6 +2,6 @@ variable "cidr-ip" {
 
 }
 
-variable "" {
+variable "project" {
   
 }
