@@ -8,5 +8,5 @@ module "vpc_module" {
     cidr ="10.0.0.0/16"
     env = "cbz"
     pri-sub-cidr =
-  
+    pub-sub-cidr =
 }
