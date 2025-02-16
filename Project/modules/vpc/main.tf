@@ -43,7 +43,7 @@ resource "aws_route_table" "sub-1a-rt" {
   }
 }
 
-resource "aws_route_table" "example" {
+resource "aws_route_table" "sub-1b-rt" {
   vpc_id = aws_vpc.example.id
 
   route = []
