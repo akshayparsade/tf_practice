@@ -16,7 +16,7 @@ resource "aws_internet_gateway" "my-vpc-gw" {
 
   tags = {
     Name = "${var.project}-igw"
-    env = var
+    env = var.env
   }
 }
 
