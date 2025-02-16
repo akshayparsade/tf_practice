@@ -7,6 +7,6 @@ variable "project" {
 variable "env" {
   default = "prod"
 }
-variable "pri" {
+variable "pri-" {
   
 }
