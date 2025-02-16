@@ -42,7 +42,6 @@ resource "aws_subnet" "public-subnet" {
 resource "aws_route_table" "sub-1a-rt" {
   vpc_id = aws_vpc.my-vpc.id
 
-  route = []
 
   tags = {
     Name = "${var.project}-rt"
