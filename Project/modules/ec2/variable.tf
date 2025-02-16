@@ -13,6 +13,6 @@ variable "key_pair" {
 variable "private_subnet_id" {
   
 }
-variable "public_instance" {
+variable "public_subnet_id" {
   
 }
