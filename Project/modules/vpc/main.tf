@@ -32,3 +32,13 @@ resource "aws_subnet" "main" {
     Name = "Main"
   }
 }
+
+resource "aws_route_table" "example" {
+  vpc_id = aws_vpc.example.id
+
+  route = []
+
+  tags = {
+    Name = "example"
+  }
+}
