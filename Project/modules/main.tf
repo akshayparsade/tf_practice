@@ -7,7 +7,7 @@ module "vpc_module" {
     source = "./modules/vpc"
     cidr =
     project = "cbz"
-    env = 
+    env = var.
     pri-sub-cidr = var.pri_sub_cidr
     pub-sub-cidr = var.pub_sub_cidr
 }
