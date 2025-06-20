@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "s3_bucket" {
  }
 }
 
-resource "aws_dynamodb_table" "basic-aws_dynamodb_table" {
+resource "aws_dynamodb_table" "basic-dynamodb-table" {
  name = "tf-eks-state-locks" 
  billing_mode = "PAY_PER_REQUEST"
  read_capacity = 20
