@@ -20,7 +20,7 @@ resource "aws_dynamodb_table" "basic-aws_dynamodb_table" {
  range_key = "statefile"   
 
  attribute {
-   name = "UserId"
+   name = "LockId"
    type = "S"
  }
 
