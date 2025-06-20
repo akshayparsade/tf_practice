@@ -14,8 +14,6 @@ resource "aws_s3_bucket" "s3_bucket" {
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
  name = "tf-eks-state-locks" 
  billing_mode = "PAY_PER_REQUEST"
- read_capacity = 20
- write_capacity = 20
  hash_key = "LockId"
  range_key = "statefile"   
 
