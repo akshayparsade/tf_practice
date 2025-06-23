@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
- bucket = "demo-tf-eks-state-bucket_akki19"
+ bucket = "demo-tf-eks-state-bucket-akki19"
 
  lifecycle {
    prevent_destroy = false
