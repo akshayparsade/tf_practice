@@ -13,6 +13,10 @@ variable "subnet_ids" {
     type = list(string)
   
 }
+variable "cluster_version" {
+  description = "Kubernetes version for EKS cluster"
+  type        = string
+}
 
 variable "node_groups" {
   description = "subnet IDs"
