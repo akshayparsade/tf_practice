@@ -10,12 +10,12 @@ variable "availability_zones" {
 
 variable "private_subnet_cidrs" {
     description = "CIDR blocks for private subnets"
-    type = string
+    type = list(string)
 }
 
 variable "public_subnet_cidrs" {
     description = "CIDR blocks for public subnets"
-    type = string
+    type = list(string)
 }
 
 variable "cluster_name" {

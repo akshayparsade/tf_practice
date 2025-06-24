@@ -1,11 +1,11 @@
 output "cluster_endpoint" {
     description = "EKS clsuter endpoint"
-    value = aws_eks_cluster.main.endpoint
+    value = module.eks.cluster_endpoint
 }
 
 output "cluster_name" {
     description = "EKS clsuter name"
-    value = aws_eks_cluster.main.name
+    value = module.eks.cluster_name
   
 }
 
