@@ -64,6 +64,16 @@ resource "aws_route_table_association" "public" {
   
 }
 
+resource "aws_eip" "nat" {
+  count = length(var.public_subnet_cidrs)
+
+  domain = "vpc"
+
+  tags = {
+    Name = "${var.cluster_name}-eip-${count.index + 1}"
+  }
+}
+
 resource "aws_nat_gateway" "main" {
  count = length(var.public_subnet_cidrs)
  allocation_id = aws_eip.nat[count.index].id
