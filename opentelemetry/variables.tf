@@ -29,7 +29,7 @@ variable "vpc_cidr" {
 
 variable "availability_zones" {
     description = "Availability zone"
-    type = string  
+    type = list(string)  
 }
 
 variable "private_subnet_cidrs" {
