@@ -14,6 +14,7 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
     security_groups = ["default"]
 }  
 
-variable "ami" {
+variable "ami_id" {
+    
   
 }
