@@ -5,7 +5,14 @@ provider "aws" {
 
 
 resource "aws_security_group" "ec2_sg" {
-    
+
+    egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
   
 }
 resource "aws_instance" "instance_1" {  # name must start with a letter or underscore
