@@ -10,7 +10,7 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
     }
     ami = var.ami_id
     instance_type = var.instance_type
-    key_name = 
+    key_name =  var.key_name
     security_groups = ["default"]
 }  
 
