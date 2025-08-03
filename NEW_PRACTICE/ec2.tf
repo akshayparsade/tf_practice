@@ -49,3 +49,6 @@ variable "key_name" {
   description = "Enter Key pair"
 }
 
+output "demo" {
+  
+}
