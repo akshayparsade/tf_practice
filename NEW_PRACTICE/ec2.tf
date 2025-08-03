@@ -35,7 +35,7 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
        apt install httpd -y
        systemctl start httpd
        systemctl enable httpd
-       
+    EOF   
 }  
 
 variable "ami_id" {
