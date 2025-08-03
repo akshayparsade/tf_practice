@@ -4,7 +4,8 @@ provider "aws" {
 }
 
 
-resource "aws_security_group" "ec2" {
+resource "aws_security_group" "ec2_sg" {
+    
   
 }
 resource "aws_instance" "instance_1" {  # name must start with a letter or underscore
