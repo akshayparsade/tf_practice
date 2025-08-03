@@ -3,7 +3,9 @@ provider "aws" {
   
 }
 
-
+data "" "name" {
+  
+}
 resource "aws_security_group" "ec2_sg" {
     name = "my_ec2_sg"
     description = "allow HTTP rule"
