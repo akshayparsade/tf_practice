@@ -52,11 +52,11 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "key_name" {
-  type = string
-  default = "New_Virgi_key"
-  description = "Enter Key pair"
-}
+# variable "key_name" {
+#   type = string
+#   default = "New_Virgi_key"
+#   description = "Enter Key pair"
+# }
 
 output "demo" {
     value = "hello world"
