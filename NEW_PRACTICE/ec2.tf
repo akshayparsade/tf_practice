@@ -28,5 +28,5 @@ variable "instance_type" {
 variable "key_name" {
   type = string
   default = "New_Virgi_key"
-  
+  description = "Enter K"
 }
