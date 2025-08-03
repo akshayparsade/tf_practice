@@ -3,6 +3,8 @@ provider "aws" {
   
 }
 
+
+
 resource "aws_instance" "instance_1" {  # name must start with a letter or underscore
     tags = {
       "key" = "tf_ec2"
