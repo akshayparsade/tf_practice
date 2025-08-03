@@ -4,6 +4,7 @@ provider "aws" {
 }
 
 data "aws_key_pair" "my_key" {
+    key_name = ""
   
 }
 resource "aws_security_group" "ec2_sg" {
