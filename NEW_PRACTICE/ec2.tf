@@ -34,7 +34,7 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
        #!/bin/bash
        apt install httpd -y
        systemctl start httpd
-       
+       systemctl enable httpd
        apt install nginx -y
 }  
 
