@@ -9,7 +9,7 @@ resource "aws_security_group" "ec2_sg" {
     description = "allow HTTP rule"
     ingress {
         from_port = 80
-        to_port = 0
+        to_port = 80
         protocol = "TCP"
         cidr_blocks = ["0.0.0.0/0"]
     }
