@@ -3,10 +3,7 @@ provider "aws" {
   
 }
 
-data "aws_key_pair" "my_key" {
-    key_name = "New_Virgi_key"
-  
-}
+
 resource "aws_security_group" "ec2_sg" {
     name = "my_ec2_sg"
     description = "allow HTTP rule"
