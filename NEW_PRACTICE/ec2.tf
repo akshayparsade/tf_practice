@@ -20,3 +20,6 @@ variable "ami_id" {
     description = "Enter AMI ID"
 }
 
+variable "instance_type" {
+  
+}
