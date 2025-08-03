@@ -8,7 +8,8 @@ resource "aws_security_group" "ec2_sg" {
     name = "my_ec2_sg"
     description = "allow HTTP rule"
     ingress {
-        
+        from_port = 0
+        to_port = 0
     }
     egress {
     from_port        = 0
