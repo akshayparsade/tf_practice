@@ -5,7 +5,8 @@ provider "aws" {
 
 
 resource "aws_security_group" "ec2_sg" {
-    name = ""
+    name = "my_ec2_sg"
+    
     egress {
     from_port        = 0
     to_port          = 0
