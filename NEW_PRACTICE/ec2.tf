@@ -9,7 +9,7 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
        "env" = "test"
     }
     ami = var.ami_id
-    instance_type = "t2.micro"
+    instance_type = 
     key_name = "New_Virgi_key"
     security_groups = ["default"]
 }  
@@ -22,6 +22,5 @@ variable "ami_id" {
 
 variable "instance_type" {
     type = string
-    default = "value"
-  
+    default = "t2.micro"
 }
