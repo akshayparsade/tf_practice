@@ -10,6 +10,7 @@ resource "aws_security_group" "ec2_sg" {
     ingress {
         from_port = 80
         to_port = 0
+        protocol = 
     }
     egress {
     from_port        = 0
