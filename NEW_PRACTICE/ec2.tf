@@ -26,5 +26,6 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  type = s
+  type = string
+  default = "value"
 }
