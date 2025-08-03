@@ -54,3 +54,6 @@ output "demo" {
   
 }
 
+output "public_ip" {
+  
+}
