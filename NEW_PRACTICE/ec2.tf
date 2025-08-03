@@ -48,3 +48,4 @@ variable "key_name" {
   default = "New_Virgi_key"
   description = "Enter Key pair"
 }
+
