@@ -32,7 +32,8 @@ resource "aws_instance" "instance_1" {  # name must start with a letter or under
     vpc_security_group_ids = [ aws_security_group.ec2_sg.my_ec2_sg.id ]
     user_data = <<-EOF
        #!/bin/bash
-       apt update -
+       apt update -y
+       apt install nginx -y
 }  
 
 variable "ami_id" {
