@@ -90,7 +90,7 @@ resource "aws_autoscaling_group" "asg_home" {
   min_size            = 2
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
   launch_configuration = aws_launch_configuration.lc_home  
-target_group_arns = [ aws_lb_target_group.tg_groccary ]
+  target_group_arns = [ aws_lb_target_group.tg_home ]
 
 }
 
