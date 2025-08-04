@@ -3,6 +3,8 @@ resource "aws_lb_target_group" "test" {
   port     = 80
   protocol = "HTTP"
   health_check {
-    path = ""
+    path = "/"
+    port = 80
+    
   }
 }
