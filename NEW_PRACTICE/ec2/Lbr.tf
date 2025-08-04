@@ -70,7 +70,7 @@ resource "aws_lb_listener_rule" "my_lb_listener_rule_elctronix" {
 
 resource "aws_lb_listener_rule" "my_lb_listener_rule_groccary" {
   listener_arn = aws_lb_listener.my_lb_listener.arn
-  priority     = 100
+  priority     = 101
   action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg_groccary.arn
