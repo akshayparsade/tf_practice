@@ -9,5 +9,10 @@ variable "key_name" {
 }
 
 variable "subnet_id_1" {
+    default = 
+}
+
+variable "subnet_id_2" {
+    
   
 }
