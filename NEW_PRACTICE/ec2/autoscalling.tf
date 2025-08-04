@@ -68,7 +68,7 @@ resource "aws_autoscaling_group" "asg_home" {
   launch_configuration = aws_launch_configuration.lc_home
 }
 
-resource "aws_autoscaling_policy" "asg_policy" {
+resource "aws_autoscaling_policy" "asg_policy_home" {
   autoscaling_group_name = aws_autoscaling_group.asg_home
   name                   = "asg_policy_home"
   policy_type            = "PredictiveScaling"
