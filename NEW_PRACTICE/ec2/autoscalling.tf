@@ -20,13 +20,7 @@ resource "aws_launch_template" "lc_home" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids = [ aws_security_group.lc_sg.id ]
-    user_data = <<EOF
-    #!/bin/bash
-    apt install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    echo "<h1> Hello World </h1> <br> <h2>Welcome to akkitech </h2>" > /var/www/html/index.html
-    EOF 
+    user_data = 
 }
 
 resource "aws_launch_template" "lc_groccary" {
