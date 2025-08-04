@@ -44,7 +44,7 @@ resource "aws_lb" "my_lb" {
   }
 }
 
-resource "aws_lb_listener" "my_lb_listener__groccary" {
+resource "aws_lb_listener" "my_lb_listener" {
   load_balancer_arn = aws_lb.my_lb.arn
   port              = "80"
   protocol          = "HTTP"
