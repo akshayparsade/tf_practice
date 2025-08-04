@@ -36,7 +36,7 @@ resource "aws_launch_template" "lc_elctronix" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids =[ aws_security_group.lc_sg.id ]
-    user_data = filebase64("./h.sh")
+    user_data = filebase64("./elctronix.sh")
 }
 
 resource "aws_autoscaling_group" "asg_groccary" {
