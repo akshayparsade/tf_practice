@@ -52,6 +52,7 @@ resource "aws_lb_listener" "my_lb_listener_rule_groccary" {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg_groccary
   }
+  
   condition {
     path_pattern {
       values = ["/groccary/*"]
