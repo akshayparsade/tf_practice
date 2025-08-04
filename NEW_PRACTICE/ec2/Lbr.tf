@@ -9,7 +9,7 @@ resource "aws_lb_target_group" "tg_home" {
   }
 }
 
-resource "aws_lb_target_group" "tg_home" {
+resource "aws_lb_target_group" "tg_grocc" {
   name     = "tg-home"
   port     = 80
   protocol = "HTTP"
