@@ -1,4 +1,5 @@
 resource "aws_security_group" "lc_sg" {
+    
   
 }
 
