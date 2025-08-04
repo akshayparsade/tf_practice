@@ -31,7 +31,7 @@ resource "aws_launch_template" "lc_home" {
 
 resource "aws_launch_template" "lc_groccary" {
     image_id = var.image_id
-    instance_type = var.instanc e_type
+    instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids =[ aws_security_group.lc_sg.id ]
     user_data = <<EOF
