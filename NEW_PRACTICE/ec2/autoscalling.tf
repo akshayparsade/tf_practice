@@ -106,7 +106,7 @@ resource "aws_autoscaling_policy" "asg_policy_home" {
 }
 
 resource "aws_autoscaling_group" "asg_lc_elctronix" {
-  name                = "asg_home"  
+  name                = "asg_lc_elctronix"  
   desired_capacity    = 2
   max_size            = 5
   min_size            = 2
@@ -114,7 +114,7 @@ resource "aws_autoscaling_group" "asg_lc_elctronix" {
   launch_configuration = aws_launch_configuration.lc_home
 }
 
-resource "aws_autoscaling_policy" "asg_policy_home" {
+resource "aws_autoscaling_policy" "asg_policy_lc_elctronix" {
   autoscaling_group_name = aws_autoscaling_group.asg_home
   name                   = "asg_policy_home"
   policy_type            = "PredictiveScaling"
