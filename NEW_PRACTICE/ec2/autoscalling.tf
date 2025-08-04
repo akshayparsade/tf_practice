@@ -69,7 +69,7 @@ resource "aws_autoscaling_group" "asg_groccary" {
 }
 
 resource "aws_autoscaling_policy" "asg_policy_groccary" {
-  autoscaling_group_name = aws_autoscaling_group.asg_home
+  autoscaling_group_name = aws_autoscaling_group.asg_groccary
   name                   = "asg_policy_home"
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
