@@ -16,7 +16,7 @@ resource "aws_security_group" "lc_sg" {
 }
 
 resource "aws_launch_configuration" "lc_home" {
-    image_id = var.ami_id
+    image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
     security_groups = aws_security_group.lc_sg.id
