@@ -28,8 +28,7 @@ resource "aws_launch_template" "lc_groccary" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids = [ aws_security_group.lc_sg.id ]
-    user_data = <<EOF
-    
+    user_data = 
 }
 
 resource "aws_launch_template" "lc_elctronix" {
