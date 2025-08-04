@@ -1,4 +1,4 @@
-resource "aws_security_group" "my_lc_sg" {
+resource "aws_security_group" "lc_sg" {
   
 }
 
