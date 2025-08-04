@@ -73,11 +73,11 @@ resource "aws_lb_listener_rule" "my_lb_listener_rule_groccary" {
   priority     = 100
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.tg_elctronix.arn
+    target_group_arn = aws_lb_target_group.tg_groccary.arn
   }
   condition {
     path_pattern {
-      values = ["/elctronix/*"]
+      values = ["//*"]
     }
   }
 }
