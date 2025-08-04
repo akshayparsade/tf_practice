@@ -105,7 +105,7 @@ resource "aws_autoscaling_policy" "asg_policy_home" {
   }
 }
 
-resource "aws_autoscaling_group" "asg_home" {
+resource "aws_autoscaling_group" "asg_lc_elctronix" {
   name                = "asg_home"  
   desired_capacity    = 2
   max_size            = 5
