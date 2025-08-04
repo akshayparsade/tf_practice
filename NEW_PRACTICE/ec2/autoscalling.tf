@@ -4,6 +4,7 @@ resource "aws_launch_configuration" "lc_home" {
     key_name =var.key_name
     security_groups = var.security_groups
     user_data = <<EOF
-    #
+    #!/bin/bash
+    
   
 }
