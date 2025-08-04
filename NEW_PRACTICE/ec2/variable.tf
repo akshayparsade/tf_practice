@@ -1,3 +1,4 @@
-variable "" {
+variable "image_id" {
+    name 
   
 }
