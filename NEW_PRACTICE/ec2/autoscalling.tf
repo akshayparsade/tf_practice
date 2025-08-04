@@ -65,7 +65,7 @@ resource "aws_autoscaling_group" "asg_groccary" {
   max_size            = 5
   min_size            = 2
   launch_template {
-    id = aws_launch_template.lc_home.id
+    id = aws_launch_template.lc_groccary.id
     version = aws_launch_template.lc_home.latest_version
   }
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
