@@ -59,8 +59,8 @@ resource "aws_launch_configuration" "lc_elctronix" {
     EOF 
 }
 
-resource "aws_autoscaling_group" "asg_home" {
-  name                = "asg_home"  
+resource "aws_autoscaling_group" "asg_groccary" {
+  name                = "asg_groccary"  
   desired_capacity    = 2
   max_size            = 5
   min_size            = 2
