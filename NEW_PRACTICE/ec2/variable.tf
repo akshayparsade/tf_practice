@@ -6,6 +6,5 @@ variable "instance_type" {
     default = 
 }
 variable "key_name" {
-    
-  
+    default = "New_Virgi_key"
 }
