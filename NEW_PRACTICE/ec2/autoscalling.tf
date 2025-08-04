@@ -29,7 +29,7 @@ resource "aws_launch_configuration" "lc_home" {
     EOF 
 }
 
-resource "aws_launch_configuration" "lc_el" {
+resource "aws_launch_configuration" "lc_groccary" {
     image_id = var.ami_id
     instance_type = var.instance_type
     key_name =var.key_name
