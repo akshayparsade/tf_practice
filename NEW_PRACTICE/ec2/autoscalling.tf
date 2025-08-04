@@ -39,6 +39,7 @@ resource "aws_launch_configuration" "lc_groccary" {
     apt install httpd -y
     systemctl start httpd
     systemctl enable httpd
+    mkdir 
     echo "<h1> Hello World </h1> <br> <h2>Welcome to akkitech </h2>" > /var/www/html/index.html
     EOF 
 }
