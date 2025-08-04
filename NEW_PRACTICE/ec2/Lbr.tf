@@ -10,7 +10,7 @@ resource "aws_lb_target_group" "tg_home" {
 }
 
 resource "aws_lb_target_group" "tg_groccary" {
-  name     = "tg-home"
+  name     = "tg-groccary"
   port     = 80
   protocol = "HTTP"
   health_check {
