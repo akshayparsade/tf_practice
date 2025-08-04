@@ -1,5 +1,5 @@
 resource "aws_lb_target_group" "tg_home" {
-  name     = "tf-example-lb-tg"
+  name     = "lb-tg"
   port     = 80
   protocol = "HTTP"
   health_check {
