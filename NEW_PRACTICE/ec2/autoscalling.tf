@@ -58,3 +58,10 @@ resource "aws_launch_configuration" "lc_elctronix" {
     echo "<h1> SALE SALE SALE ON  elctronix items  </h1>" > /var/www/html/index.html
     EOF 
 }
+
+resource "aws_autoscaling_group" "example" {
+  capacity_rebalance  = true
+  desired_capacity    = 12
+  max_size            = 15
+  min_size            = 12
+  vpc_zone_identifier = [aws_subnet.example1.id, aws_subnet.example2.id]
