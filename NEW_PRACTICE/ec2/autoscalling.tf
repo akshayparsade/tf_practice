@@ -19,7 +19,7 @@ resource "aws_launch_template" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
-    vpc_security_groups_ids = [aws_security_group.lc_sg.id]
+    vpc_security_group_ids = [aws_security_group.lc_sg.id]
     user_data = filebase64("./home.sh")
 }
 
@@ -27,7 +27,7 @@ resource "aws_launch_template" "lc_groccary" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
-    vpc_security_groups_ids = [aws_security_group.lc_sg.id]
+    vpc_security_group_ids = [aws_security_group.lc_sg.id]
     user_data = filebase64("./groccary.sh")
 }
 
@@ -35,7 +35,7 @@ resource "aws_launch_template" "lc_elctronix" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
-    vpc_security_groups_ids =[aws_security_group.lc_sg.id]
+    vpc_security_group_ids =[aws_security_group.lc_sg.id]
     user_data = filebase64("./elctronix.sh")
 }
 
