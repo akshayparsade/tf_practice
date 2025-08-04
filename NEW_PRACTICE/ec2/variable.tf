@@ -7,3 +7,7 @@ variable "instance_type" {
 variable "key_name" {
     default = "New_Virgi_key"
 }
+
+variable "subnet_id_1" {
+  
+}
