@@ -40,6 +40,6 @@ resource "aws_launch_configuration" "lc_groccary" {
     systemctl start httpd
     systemctl enable httpd
     mkdir /var/www/html/groccary
-    echo "<h1> Hello World </h1> <br> <h2>Welcome to akkitech </h2>" > /var/www/html/index.html
+    echo "<h1> </h1> <br> <h2>Welcome to akkitech </h2>" > /var/www/html/index.html
     EOF 
 }
