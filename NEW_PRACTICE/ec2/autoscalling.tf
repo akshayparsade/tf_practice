@@ -49,7 +49,7 @@ resource "aws_autoscaling_group" "asg_groccary" {
     version = aws_launch_template.lc_groccary.latest_version
   }
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
-  target_group_arns = [ aws_lb_target_group.tg_groccary ]
+  target_group_arns = [ aws_lb_target_group.tg_groccary.arn ]
 }
 
 resource "aws_autoscaling_policy" "asg_policy_groccary" {
@@ -76,7 +76,7 @@ resource "aws_autoscaling_group" "asg_home" {
     version = aws_launch_template.lc_home.latest_version
   }
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
-  target_group_arns = [ aws_lb_target_group.tg_home ]
+  target_group_arns = [ aws_lb_target_group.tg_home.arn ]
 
 }
 
@@ -104,7 +104,7 @@ resource "aws_autoscaling_group" "asg_lc_elctronix" {
     version = aws_launch_template.lc_elctronix.latest_version
   }
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
-  target_group_arns = [ aws_lb_target_group.tg_elctronix ]
+  target_group_arns = [ aws_lb_target_group.tg_elctronix.arn ]
 
 }
 
