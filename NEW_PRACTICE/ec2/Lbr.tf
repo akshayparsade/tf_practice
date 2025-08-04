@@ -2,7 +2,7 @@ resource "aws_lb_target_group" "tg_home" {
   name     = "tg-home"
   port     = 80
   protocol = "HTTP"
-  vpc_id = var
+  vpc_id = var.vpc_id
   health_check {
     path = "/"
     port = 80
@@ -14,6 +14,8 @@ resource "aws_lb_target_group" "tg_groccary" {
   name     = "tg-groccary"
   port     = 80
   protocol = "HTTP"
+    vpc_id = var.vpc_id
+
   health_check {
     path = "/groccary"
     port = 80
