@@ -33,7 +33,7 @@ resource "aws_launch_template" "lc_groccary" {
     image_id = var.image_id
     instance_type = var.instanc e_type
     key_name =var.key_name
-    vpc.security_groups.id =[ aws_security_group.lc_sg.id ]
+    vpc_security_groups.id =[ aws_security_group.lc_sg.id ]
     user_data = <<EOF
     #!/bin/bash
     apt install httpd -y
