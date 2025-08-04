@@ -77,7 +77,6 @@ resource "aws_autoscaling_policy" "asg_policy" {
       target_value = 10
       predefined_load_metric_specification {
         predefined_metric_type = "ASGTotalCPUUtilization"
-        resource_label         = "app/my-alb/778d41231b141a0f/targetgroup/my-alb-target-group/943f017f100becff"
       }
       customized_scaling_metric_specification {
         metric_data_queries {
