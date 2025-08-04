@@ -52,19 +52,19 @@ resource "aws_autoscaling_group" "asg_groccary" {
   target_group_arns = [ aws_lb_target_group.tg_groccary.arn ]
 }
 
-resource "aws_autoscaling_policy" "asg_policy_groccary" {
-  autoscaling_group_name = aws_autoscaling_group.asg_groccary
+resource "aws_autoscaling_policy" "asg_policy_grocery" {
   name                   = "asg_policy_home"
-  policy_type            = "PredictiveScaling"
-  predictive_scaling_configuration {
-    metric_specification {
-      target_value = 10
-      predefined_load_metric_specification {
-        predefined_metric_type = "ASGTotalCPUUtilization"
-      }
+  policy_type            = "TargetTrackingScaling"
+  autoscaling_group_name = aws_autoscaling_group.asg_groccary.name
+
+  target_tracking_configuration {
+    predefined_metric_specification {
+      predefined_metric_type = "ASGAverageCPUUtilization"
     }
+    target_value = 50.0
   }
 }
+
 
 resource "aws_autoscaling_group" "asg_home" {
   name                = "asg_home"  
@@ -81,18 +81,18 @@ resource "aws_autoscaling_group" "asg_home" {
 }
 
 resource "aws_autoscaling_policy" "asg_policy_home" {
-  autoscaling_group_name = aws_autoscaling_group.asg_home
   name                   = "asg_policy_home"
-  policy_type            = "PredictiveScaling"
-  predictive_scaling_configuration {
-    metric_specification {
-      target_value = 10
-      predefined_load_metric_specification {
-        predefined_metric_type = "ASGTotalCPUUtilization"
-      }
+  policy_type            = "TargetTrackingScaling"
+  autoscaling_group_name = aws_autoscaling_group.asg_home.name
+
+  target_tracking_configuration {
+    predefined_metric_specification {
+      predefined_metric_type = "ASGAverageCPUUtilization"
     }
+    target_value = 50.0  # Adjust this as needed
   }
 }
+
 
 resource "aws_autoscaling_group" "asg_lc_elctronix" {
   name                = "asg_lc_elctronix"  
@@ -109,15 +109,15 @@ resource "aws_autoscaling_group" "asg_lc_elctronix" {
 }
 
 resource "aws_autoscaling_policy" "asg_policy_lc_elctronix" {
-  autoscaling_group_name = aws_autoscaling_group.asg_lc_elctronix
-  name                   = "asg_policy_home"
-  policy_type            = "PredictiveScaling"
-  predictive_scaling_configuration {
-    metric_specification {
-      target_value = 10
-      predefined_load_metric_specification {
-        predefined_metric_type = "ASGTotalCPUUtilization"
-      }
+  name                   = "asg_policy_lc_elctronix"
+  policy_type            = "TargetTrackingScaling"
+  autoscaling_group_name = aws_autoscaling_group.asg_lc_elctronix.name
+
+  target_tracking_configuration {
+    predefined_metric_specification {
+      predefined_metric_type = "ASGAverageCPUUtilization"
     }
+    target_value = 50.0  # Set your desired target CPU percentage
   }
 }
+
