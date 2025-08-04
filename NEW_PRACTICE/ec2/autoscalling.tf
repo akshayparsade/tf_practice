@@ -60,7 +60,7 @@ resource "aws_launch_configuration" "lc_elctronix" {
 }
 
 resource "aws_autoscaling_group" "asg_home" {
-  capacity_rebalance  = true
+  name =  
   desired_capacity    = 12
   max_size            = 15
   min_size            = 12
