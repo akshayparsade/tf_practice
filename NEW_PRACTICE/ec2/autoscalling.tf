@@ -62,6 +62,6 @@ resource "aws_launch_configuration" "lc_elctronix" {
 resource "aws_autoscaling_group" "asg_home" {
   name                = "asg_home"  
   desired_capacity    = 2
-  max_size            = 15
-  min_size            = 12
+  max_size            = 5
+  min_size            = 2
   vpc_zone_identifier = [aws_subnet.example1.id, aws_subnet.example2.id]
