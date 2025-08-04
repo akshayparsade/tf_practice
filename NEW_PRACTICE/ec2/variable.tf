@@ -9,7 +9,7 @@ variable "key_name" {
 }
 
 variable "subnet_id_1" {
-    default = 
+    default = subnet-0848f871089666011"
 }
 
 variable "subnet_id_2" {
