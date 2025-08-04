@@ -121,7 +121,7 @@ resource "aws_autoscaling_group" "asg_lc_elctronix" {
   min_size            = 2
   launch_template {
     id = aws_launch_template.lc_elctronix.id
-    version = aws_launch_template.lc_elctronix
+    version = aws_launch_template.lc_elctronix.latest_version
   }
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
   target_group_arns = [ aws_lb_target_group.tg_elctronix ]
