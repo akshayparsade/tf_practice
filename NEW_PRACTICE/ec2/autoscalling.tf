@@ -3,6 +3,7 @@ resource "aws_launch_configuration" "lc_home" {
     instance_type = var.instance_type
     key_name =var.key_name
     security_groups = var.security_groups
-    user_data = 
+    user_data = <<EOF
+    #
   
 }
