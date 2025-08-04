@@ -43,14 +43,7 @@ resource "aws_launch_template" "lc_elctronix" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids =[ aws_security_group.lc_sg.id ]
-    user_data = <<EOF
-    #!/bin/bash
-    apt install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    mkdir /var/www/html/elctronix
-    echo "<h1> SALE SALE SALE ON  elctronix items  </h1>" > /var/www/html/index.html
-    EOF 
+    user_data = 
 }
 
 resource "aws_autoscaling_group" "asg_groccary" {
