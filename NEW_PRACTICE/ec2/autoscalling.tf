@@ -1,6 +1,6 @@
 resource "aws_security_group" "lc_sg" {
     name        = "allow_tls"
-   description = "Allow HTTP Port"
+   description = "Allow HTTP Port public"
   ingress {
     from_port        = 80
     to_port          = 80
