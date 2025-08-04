@@ -5,7 +5,7 @@ resource "aws_lb_target_group" "tg_home" {
   health_check {
     path = "/"
     port = 80
-    protocol = ""
+    protocol = "HTTP"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_lb_target_group" "tg_groccary" {
   health_check {
     path = "/groccary"
     port = 80
-    protocol = "TCP"
+    protocol = "HTTP"
   }
 }
 
