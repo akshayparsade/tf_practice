@@ -1,4 +1,5 @@
 variable "image_id" {
-    name = "AMI "
-  
+    name = "AMI ID"
+    default = 
 }
+
