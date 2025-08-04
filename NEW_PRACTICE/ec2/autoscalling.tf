@@ -40,7 +40,7 @@ resource "aws_launch_configuration" "lc_groccary" {
     systemctl start httpd
     systemctl enable httpd
     mkdir /var/www/html/groccary
-    echo "<h1> This is groccary Page  </h1> > /var/www/html/index.html
+    echo "<h1> This is groccary Page  </h1>" > /var/www/html/index.html
     EOF 
 }
 
@@ -55,6 +55,6 @@ resource "aws_launch_configuration" "lc_elctronix" {
     systemctl start httpd
     systemctl enable httpd
     mkdir /var/www/html/elctronix
-    echo "<h1> SALE SALE SALE ON  elctronix items  </h1> > /var/www/html/index.html
+    echo "<h1> SALE SALE SALE ON  elctronix items  </h1>" > /var/www/html/index.html
     EOF 
 }
