@@ -14,7 +14,7 @@ resource "aws_lb_target_group" "tg_groccary" {
   port     = 80
   protocol = "HTTP"
   health_check {
-    path = "/"
+    path = "/groccary"
     port = 80
     protocol = "TCP"
   }
