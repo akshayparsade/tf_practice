@@ -60,7 +60,7 @@ resource "aws_lb_listener_rule" "my_lb_listener_rule_elctronix" {
 
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.tg_home.arn
+    target_group_arn = aws_lb_target_group.tg_elctronix.arn
   }
 
   condition {
