@@ -3,7 +3,7 @@ resource "aws_security_group" "lc_sg" {
    description = "Allow HTTP Port"
   ingress {
     from_port        = 80
-    to_port          = 0
+    to_port          = 80
     protocol         = "TCP"
     cidr_blocks      = ["0.0.0.0/0"]
   }
@@ -19,7 +19,7 @@ resource "aws_launch_configuration" "lc_home" {
     image_id = var.ami_id
     instance_type = var.instance_type
     key_name =var.key_name
-    security_groups = var.security_groups
+    security_groups = aws
     user_data = <<EOF
     #!/bin/bash
     apt install httpd -y
