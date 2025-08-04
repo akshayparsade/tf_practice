@@ -1,3 +1,7 @@
+resource "aws_security_group" "name" {
+  
+}
+
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.ami_id
     instance_type = var.instance_type
