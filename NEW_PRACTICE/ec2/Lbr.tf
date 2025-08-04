@@ -20,8 +20,8 @@ resource "aws_lb_target_group" "tg_groccary" {
   }
 }
 
-resource "aws_lb_target_group" "tg_home" {
-  name     = "tg-home"
+resource "aws_lb_target_group" "tg_elctronix" {
+  name     = "tg-elctronix"
   port     = 80
   protocol = "HTTP"
   health_check {
