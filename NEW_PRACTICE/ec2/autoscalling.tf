@@ -44,7 +44,7 @@ resource "aws_launch_template" "lc_groccary" {
     EOF 
 }
 
-resource "aws_launch_configuration" "lc_elctronix" {
+resource "aws_launch_template" "lc_elctronix" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
