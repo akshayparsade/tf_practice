@@ -27,7 +27,7 @@ resource "aws_lb_target_group" "tg_elctronix" {
   health_check {
     path = "/elctronix"
     port = 80
-    protocol = "TCP"
+    protocol = "HTTP"
   }
 }
 
