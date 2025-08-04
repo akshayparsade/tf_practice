@@ -81,3 +81,4 @@ resource "aws_autoscaling_policy" "asg_policy_home" {
     }
   }
 }
+
