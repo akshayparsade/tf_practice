@@ -3,7 +3,7 @@ variable "image_id" {
     default = 
 }
 variable "instance_type" {
-    default = 
+    default = ""
 }
 variable "key_name" {
     default = "New_Virgi_key"
