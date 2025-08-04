@@ -115,7 +115,7 @@ resource "aws_autoscaling_group" "asg_lc_elctronix" {
 }
 
 resource "aws_autoscaling_policy" "asg_policy_lc_elctronix" {
-  autoscaling_group_name = aws_autoscaling_group.asg_home
+  autoscaling_group_name = aws_autoscaling_group.asg_lc_elctronix
   name                   = "asg_policy_home"
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
