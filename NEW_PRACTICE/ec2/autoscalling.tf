@@ -29,13 +29,7 @@ resource "aws_launch_template" "lc_groccary" {
     key_name =var.key_name
     vpc_security_groups_ids = [ aws_security_group.lc_sg.id ]
     user_data = <<EOF
-    #!/bin/bash
-    apt install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    mkdir /var/www/html/groccary
-    echo "<h1> This is groccary Page  </h1>" > /var/www/html/index.html
-    EOF 
+    
 }
 
 resource "aws_launch_template" "lc_elctronix" {
