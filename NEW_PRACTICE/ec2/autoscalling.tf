@@ -1,7 +1,6 @@
 resource "aws_security_group" "lc_sg" {
     name        = "allow_tls"
-   description = "Allow TLS inbound traffic and all outbound traffic"
-   vpc_id      = aws_vpc.main.id
+   description = "Allow HTTP Port"
 
    ingress {
     from_port        = 80
