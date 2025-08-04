@@ -54,7 +54,7 @@ resource "aws_lb_listener" "my_lb_listener_rule_groccary" {
   }
   condition {
     path_pattern {
-      values = ["/elctronix/*"]
+      values = ["/groccary/*"]
     }
   }
 }
