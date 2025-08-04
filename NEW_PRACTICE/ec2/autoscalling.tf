@@ -20,7 +20,7 @@ resource "aws_launch_template" "lc_home" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids = [ aws_security_group.lc_sg.id ]
-    user_data = filebase64("")
+    user_data = filebase64("./home.sh")
 }
 
 resource "aws_launch_template" "lc_groccary" {
@@ -28,7 +28,7 @@ resource "aws_launch_template" "lc_groccary" {
     instance_type = var.instance_type
     key_name =var.key_name
     vpc_security_groups_ids = [ aws_security_group.lc_sg.id ]
-    user_data = 
+    user_data = filebase64("./home.sh")
 }
 
 resource "aws_launch_template" "lc_elctronix" {
