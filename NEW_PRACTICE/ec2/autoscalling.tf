@@ -33,7 +33,7 @@ resource "aws_launch_configuration" "lc_groccary" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
-    security_groups =[ aws_security_group.lc_sg.id
+    security_groups =[ aws_security_group.lc_sg.id ]
     user_data = <<EOF
     #!/bin/bash
     apt install httpd -y
@@ -48,7 +48,7 @@ resource "aws_launch_configuration" "lc_elctronix" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name =var.key_name
-    security_groups = aws_security_group.lc_sg.id
+    security_groups = aws_security_group.lc_sg.id ]
     user_data = <<EOF
     #!/bin/bash
     apt install httpd -y
