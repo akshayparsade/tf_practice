@@ -66,7 +66,7 @@ resource "aws_autoscaling_group" "asg_groccary" {
   min_size            = 2
   vpc_zone_identifier = [var.subnet_id_1, var.subnet_id_2]
   launch_configuration = aws_launch_configuration.lc_groccary
-  target_group_arns = [ aws_lb.target_group_arn ]
+  target_group_arns = [ aws_lb_target_group_arn ]
 }
 
 resource "aws_autoscaling_policy" "asg_policy_groccary" {
