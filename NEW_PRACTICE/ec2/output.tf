@@ -1,3 +1,3 @@
-output "lb_" {
+output "lb_endpoint" {
   
 }
