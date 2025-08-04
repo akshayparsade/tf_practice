@@ -1,3 +1,3 @@
-resource "aws_launch_configuration" "name" {
+resource "aws_launch_configuration" "lc" {
   
 }
