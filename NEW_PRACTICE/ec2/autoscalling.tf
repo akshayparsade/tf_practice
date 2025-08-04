@@ -1,14 +1,12 @@
 resource "aws_security_group" "lc_sg" {
     name        = "allow_tls"
    description = "Allow HTTP Port"
-
-   ingress {
+  ingress {
     from_port        = 80
     to_port          = 0
     protocol         = "TCP"
     cidr_blocks      = ["0.0.0.0/0"]
   }
-
   egress {
     from_port        = 0
     to_port          = 0
