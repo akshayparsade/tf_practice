@@ -1,5 +1,5 @@
 variable "image_id" {
-    default = ami-08a6efd148b1f7504
+    default = "ami-08a6efd148b1f7504"
 }
 variable "instance_type" {
     default = "t2.micro"
