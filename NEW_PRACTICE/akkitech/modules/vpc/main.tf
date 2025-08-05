@@ -22,6 +22,6 @@ resource "aws_subnet" "akkitech_private_subnet" {
   #availability_zone = "us-east-1a"  # Change if needed
   #map_public_ip_on_launch = true
   tags = {
-    Name = "private-subnet"
+    Name = "${var.project}-public-subnet"
   }
 }
