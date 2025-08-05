@@ -5,3 +5,4 @@ resource "aws_vpc" "akkitech_vpc" {
     env = var.env
   }
 }
+
