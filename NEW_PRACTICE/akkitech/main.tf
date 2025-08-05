@@ -19,7 +19,7 @@ module "akkitech_ec2" {
   key_pair = var.key_pair
   security_groups_id = aws_security_group.ec2_sg
   private_subnet_id = module.akkitech_vpc.private_subnet_id
-  public_subnet_id = var.pub_sub_id
+  public_subnet_id = module.akkitech_vpc.public_subnet_id
 }
 
 resource "aws_security_group" "ec2_sg" {
