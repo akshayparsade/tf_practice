@@ -32,5 +32,5 @@ variable "pri_sub_id" {
   default = 
 }
 variable "pub_sub_id" {
-  
+  default = 
 }
