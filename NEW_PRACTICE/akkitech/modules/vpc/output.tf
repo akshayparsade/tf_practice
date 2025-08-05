@@ -3,5 +3,6 @@ output "private_subnet_id" {
 }
 
 output "public_subnet_id" {
-   defdepends_ ] 
+   value = aws
+
 }
