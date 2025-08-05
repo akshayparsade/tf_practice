@@ -8,6 +8,6 @@ module "akkitech_vpc" {
 cidr = var.vpc_cidr
 project = var.project
 env = var.env
-private_subnet_cidr = var.
+private_subnet_cidr = var.private_subnet_cidr
 public_subnet_cidr = "10.0.0.0/20"
 }
