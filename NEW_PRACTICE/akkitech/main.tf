@@ -5,5 +5,5 @@ provider "aws" {
 
 module "akkitech_vpc" {
  source = "./modules/vpc"
-c
+cidr = 
 }
