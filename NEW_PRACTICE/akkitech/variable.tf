@@ -7,3 +7,6 @@ variable "project" {
 variable "env" {
   default = "dev"
 }
+variable "private_subnet_cidr" {
+  
+}
