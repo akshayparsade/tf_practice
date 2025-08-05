@@ -25,6 +25,7 @@ public_subnet_cidr = var.public_subnet_cidr
 resource "aws_security_group" "lc_sg" {
     name        = "allow_tls"
    description = "Allow HTTP Port public"
+   vpc_id = module.vp
   ingress {
     from_port        = 80
     to_port          = 80
