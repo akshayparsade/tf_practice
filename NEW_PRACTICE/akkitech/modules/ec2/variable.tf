@@ -4,10 +4,10 @@ variable "image_id" {
 variable "instance_type" {
     default = 
 }
-variable "image_id" {
+variable "key_pair" {
     default = 
 }
-variable "image_id" {
+variable "" {
     default = 
 }
 variable "image_id" {
