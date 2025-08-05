@@ -6,3 +6,6 @@ output "public_subnet_id" {
   value = module.akkitech_vpc.public_subnet_id
 }
 
+output "vpc_id" {
+  
+}
