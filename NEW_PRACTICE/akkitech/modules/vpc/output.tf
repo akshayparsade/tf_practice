@@ -1,3 +1,3 @@
 output "private_subnet_id" {
-  value = 
+  value = aws_subnet
 }
