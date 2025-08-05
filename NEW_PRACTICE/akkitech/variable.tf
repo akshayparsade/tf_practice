@@ -23,5 +23,5 @@ variable "instance_type" {
   default = "t2.micro"
 }
 variable "key_pair" {
-  
+  default = "New_Virgi"
 }
