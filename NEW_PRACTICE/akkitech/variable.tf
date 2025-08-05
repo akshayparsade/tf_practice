@@ -17,7 +17,7 @@ variable "public_subnet_cidr" {
 ### EC2 #####
 
 variable "image_id" {
-  default = "NEW_PRACTICE/ec2.tf"
+  default = "ami-08a6efd148b1f7504"
 }
 variable "instance_type" {
   default = "t2.micro"
