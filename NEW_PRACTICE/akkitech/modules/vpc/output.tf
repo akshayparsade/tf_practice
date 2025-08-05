@@ -1,3 +1,3 @@
-output "pri" {
+output "private_subnet_id" {
   
 }
