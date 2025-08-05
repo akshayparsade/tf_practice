@@ -38,7 +38,7 @@ resource "aws_internet_gateway" "akkitech_igw" {
 }
 
 resource "aws_default_route_table" "defa_rt" {
-  default_route_table_id = aws_vpc.cbz_vpc.def
+  default_route_table_id = aws_vpc.cbz_vpc.default_route
   route {
     cidr_block = var.private_subnet_cidr
     gateway_id = aws_internet_gateway.igw.id
