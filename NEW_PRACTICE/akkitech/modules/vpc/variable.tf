@@ -3,10 +3,6 @@ variable "cidr" {
   
 }
 
-variable "cidr_block" {
-  default = 
-}
-
 variable "project" {
   
 }
