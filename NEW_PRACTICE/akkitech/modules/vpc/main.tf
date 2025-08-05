@@ -1,5 +1,9 @@
-resource "aws_subnet" "example" {
-  vpc_id            = data.aws_vpc.selected.id
-  availability_zone = "us-west-2a"
-  cidr_block        = cidrsubnet(data.aws_vpc.selected.cidr_block, 4, 1)
+resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
+  tags = {
+    Name = "my-vpc"
+  }
 }
