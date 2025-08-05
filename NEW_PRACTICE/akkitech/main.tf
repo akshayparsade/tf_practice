@@ -22,7 +22,7 @@ module "akkitech_ec2" {
   public_subnet_id = var.pub_sub_id
 }
 
-resource "aws_security_group" "lc_sg" {
+resource "aws_security_group" "ec2_sg" {
     name        = "allow_tls"
    description = "Allow HTTP Port public"
    vpc_id = module.akkitech_vpc.vpc_id
