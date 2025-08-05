@@ -21,3 +21,20 @@ public_subnet_cidr = var.public_subnet_cidr
 #   private_subnet_id = var.pri_sub_id
 #   public_subnet_id = var.pub_sub_id
 # }
+
+resource "aws_security_group" "lc_sg" {
+    name        = "allow_tls"
+   description = "Allow HTTP Port public"
+  ingress {
+    from_port        = 80
+    to_port          = 80
+    protocol         = "TCP"
+    cidr_blocks      = ["0.0.0.0/0"]
+  }
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+  }
+}
