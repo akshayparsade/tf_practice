@@ -6,6 +6,10 @@ variable "cidr" {
 variable "cidr_block" {
   
 }
+
+variable "" {
+  
+}
 variable "subnet_id_1" {
     default = 
   
