@@ -19,6 +19,6 @@ variable "public_subnet_cidr" {
   
 }
 
-variable "subnet_id_2" {
+variable "private_subnet_cidr" {
   
 }
