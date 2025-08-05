@@ -14,7 +14,7 @@ public_subnet_cidr = var.public_subnet_cidr
 
 module "akkitech_ec2" {
   source = "./modules/ec2"
-  imimage_id =  = var.image_id
+  image_id = var.image_id
   instance_type = var.instance_type
   key_pair = var.key_pair
   security_groups_id =[ aws_security_group.ec2_sg ]
