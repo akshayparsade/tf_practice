@@ -1,1 +1,3 @@
-res
+resource "aws_ins" "name" {
+  
+}
