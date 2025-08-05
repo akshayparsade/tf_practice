@@ -13,6 +13,7 @@ resource "aws_subnet" "akkitech_public_subnet" {
   #map_public_ip_on_launch = true
   tags = {
     Name = "${var.project}-public-subnet"
+    env = var.env
   }
 }
 
@@ -23,5 +24,7 @@ resource "aws_subnet" "akkitech_private_subnet" {
   #map_public_ip_on_launch = true
   tags = {
     Name = "${var.project}-private-subnet"
+        env = var.env
+
   }
 }
