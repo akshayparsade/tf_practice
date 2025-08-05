@@ -17,7 +17,7 @@ module "akkitech_ec2" {
   ami = var.image_id
   instance_type = var.instance_type
   key_pair = var.key_pair
-  security_groups_id = aws_security_group.lc_sg
+  security_groups_id = aws_security_group.ec2_sg
   private_subnet_id = var.pri_sub_id
   public_subnet_id = var.pub_sub_id
 }
