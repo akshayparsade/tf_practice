@@ -3,6 +3,6 @@ output "private_subnet_id" {
 }
 
 output "public_subnet_id" {
-   value = aws
+   value = aws_subnet.akkitech_public_subnet
 
 }
