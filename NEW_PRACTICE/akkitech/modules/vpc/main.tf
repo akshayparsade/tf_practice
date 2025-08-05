@@ -45,6 +45,7 @@ resource "aws_default_route_table" "defa_rt" {
   }
 
   tags = {
+
     Name = "public-rt"
   }
 }
