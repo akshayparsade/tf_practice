@@ -11,5 +11,5 @@ resource "aws_instance" "public_instance" {
   instance_type = var.instance_type
   key_name = var.key_pair
   vpc_security_group_ids = var.security_groups_id
-  subnet_id = var.private_subnet.id
+  subnet_id = var.public_subnet.id
 }
