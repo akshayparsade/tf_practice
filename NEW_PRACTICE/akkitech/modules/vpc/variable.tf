@@ -1,3 +1,4 @@
-variable "" {
+variable "vpc_id" {
+    default = 
   
 }
