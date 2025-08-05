@@ -6,7 +6,7 @@ resource "aws_instance" "private_instance" {
   subnet_id = var.private_subnet.id
 }
 
-resource "aws_instance" "private_instance" {
+resource "aws_instance" "public_instance" {
   ami = var.image_id
   instance_type = var.instance_type
   key_name = var.key_pair
