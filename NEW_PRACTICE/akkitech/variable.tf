@@ -14,3 +14,8 @@ variable "public_subnet_cidr" {
   default = "10.0.0.16/20"
 }
 
+### EC2 #####
+
+variable "" {
+  
+}
