@@ -28,7 +28,7 @@ resource "aws_subnet" "akkitech_private_subnet" {
   }
 }
 
-resource "aws_internet_gateway" "akkitech_igw" {
+resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.akkitech_vpc.id
 
   tags = {
