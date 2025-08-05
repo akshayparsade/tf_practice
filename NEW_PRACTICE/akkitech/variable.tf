@@ -17,7 +17,7 @@ variable "public_subnet_cidr" {
 ### EC2 #####
 
 variable "image_id" {
-  default = 
+  default = ""
 }
 variable "instance_type" {
   default = "t2.micro"
@@ -29,8 +29,8 @@ variable "security_groups_id" {
   default = ""
 }
 variable "pri_sub_id" {
-  default = 
+  default = ""
 }
 variable "pub_sub_id" {
-  default = 
+  default = ""
 }
