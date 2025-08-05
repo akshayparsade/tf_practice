@@ -23,5 +23,8 @@ variable "instance_type" {
   default = "t2.micro"
 }
 variable "key_pair" {
-  default = "New_Virgi"
+  default = "New_Virgi_key"
+}
+variable "security_groups_id" {
+  
 }
