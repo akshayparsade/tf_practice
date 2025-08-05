@@ -7,6 +7,6 @@ output "public_subnet_id" {
 }
 
 output "vpc_id" {
-    value = aws_vpc
+    value = aws_vpc.akkitech_vpc.id
   
 }
