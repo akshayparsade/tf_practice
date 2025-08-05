@@ -11,8 +11,17 @@ resource "aws_subnet" "akkitec_public_subnet" {
   cidr_block        = var.public_subnet_cidr
   #availability_zone = "us-east-1a"  # Change if needed
   #map_public_ip_on_launch = true
+  tags = {
+    Name = "public-subnet"
+  }
+}
 
- = {
+resource "aws_subnet" "akkitec_public_subnet" {
+  vpc_id            = aws_vpc.akkitech_vpc.id
+  cidr_block        = var.public_subnet_cidr
+  #availability_zone = "us-east-1a"  # Change if needed
+  #map_public_ip_on_launch = true
+  tags = {
     Name = "public-subnet"
   }
 }
