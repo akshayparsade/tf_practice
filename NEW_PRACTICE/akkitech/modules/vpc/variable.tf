@@ -3,6 +3,9 @@ variable "cidr" {
   
 }
 
+variable "cidr_block" {
+  
+}
 variable "subnet_id_1" {
     default = 
   
