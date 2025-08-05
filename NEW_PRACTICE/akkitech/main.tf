@@ -15,5 +15,6 @@ public_subnet_cidr = var.public_subnet_cidr
 module "akkitech_ec2" {
   source = "./modules/ec2"
   ami = var.image_id
-  instance_type = var.inst
+  instance_type = var.instance_type
+  key_pair = var.
 }
