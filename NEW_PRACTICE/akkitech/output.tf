@@ -1,4 +1,4 @@
-output "private_subnet_id" {
+output "private_subnet_cidr" {
   value = aws_subnet.private_subnet.id
 }
 
