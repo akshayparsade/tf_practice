@@ -31,3 +31,6 @@ variable "security_groups_id" {
 variable "pri_sub_id" {
   default = 
 }
+variable "pub_sub_id" {
+  
+}
