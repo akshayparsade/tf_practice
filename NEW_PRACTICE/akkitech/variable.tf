@@ -26,5 +26,8 @@ variable "key_pair" {
   default = "New_Virgi_key"
 }
 variable "security_groups_id" {
-  default = 
+  default = ""
+}
+variable "" {
+  
 }
