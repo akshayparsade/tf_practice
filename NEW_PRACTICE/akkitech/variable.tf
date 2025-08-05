@@ -25,12 +25,12 @@ variable "instance_type" {
 variable "key_pair" {
   default = "New_Virgi_key"
 }
-variable "security_groups_id" {
-  default = ""
-}
-variable "pri_sub_id" {
-  default = ""
-}
-variable "pub_sub_id" {
-  default = ""
-}
+# variable "security_groups_id" {
+#   default = ""
+# }
+# variable "pri_sub_id" {
+#   default = ""
+# }
+# variable "pub_sub_id" {
+#   default = ""
+# }
