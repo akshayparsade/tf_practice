@@ -1,5 +1,5 @@
 output "private_subnet_id" {
-  value = module.akkitech_vpc.private_subnet_id
+  value = aws_subnet_vpc.private_subnet_id
 }
 
 output "public_subnet_id" {
