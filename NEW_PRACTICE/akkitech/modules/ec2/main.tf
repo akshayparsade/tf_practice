@@ -1,3 +1,3 @@
-resource "aws_ins" "name" {
+resource "aws_instance" "akki" {
   
 }
