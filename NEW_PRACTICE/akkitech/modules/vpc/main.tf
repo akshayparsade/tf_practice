@@ -32,6 +32,7 @@ resource "aws_internet_gateway" "akkitech_igw" {
   vpc_id = aws_vpc.akkitech_vpc.id
 
   tags = {
-    Name = "my-igw"
+    Name = "${var.project}-igw"
+    env = var.env
   }
 }
