@@ -4,6 +4,6 @@ variable "vpc_cidr" {
 variable "project" {
   default = "akkitrch.sol"
 }
-variable "" {
-  
+variable "env" {
+  default = "dev"
 }
