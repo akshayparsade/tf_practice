@@ -4,13 +4,14 @@ variable "cidr" {
 }
 
 variable "cidr_block" {
-  
+  def
 }
 
 variable "project" {
   
 }
-variable "" {
+variable "env" {
+    default = 
   
 }
 variable "subnet_id_1" {
