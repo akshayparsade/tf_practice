@@ -19,6 +19,6 @@ variable "public_subnet_cidr" {
 variable "image_id" {
   default = 
 }
-variable "" {
-  
+variable "instance_type" {
+  default = "t"
 }
