@@ -6,4 +6,7 @@ provider "aws" {
 module "akkitech_vpc" {
  source = "./modules/vpc"
 cidr = 
+project = 
+env =
+pi
 }
