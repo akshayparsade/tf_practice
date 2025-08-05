@@ -7,7 +7,7 @@ variable "instance_type" {
 variable "key_pair" {
     default = 
 }
-variable "" {
+variable "security_groups_id" {
     default = 
 }
 variable "image_id" {
