@@ -2,6 +2,6 @@ output "private_subnet_id" {
   value = aws_subnet.private_subnet.id
 }
 
-output "publ" {
-  
+output "public_subnet_id" {
+   defdepends_ ] 
 }
