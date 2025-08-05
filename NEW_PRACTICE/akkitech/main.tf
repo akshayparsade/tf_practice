@@ -1,3 +1,3 @@
-resource "reg" "name" {
+resource "regio" "name" {
   
 }
