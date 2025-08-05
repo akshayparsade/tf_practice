@@ -14,5 +14,5 @@ public_subnet_cidr = var.public_subnet_cidr
 
 module "akkitech_ec2" {
   source = "./modules/ec2"
-
+  ami = 
 }
