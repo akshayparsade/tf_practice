@@ -44,8 +44,8 @@ resource "aws_default_route_table" "defa_rt" {
     gateway_id = aws_internet_gateway.igw.id
   }
 
-  tags = {
-
-    Name = "public-rt"
+ tags = {
+    Name = "${var.project}-igw"
+    env = var.env
   }
 }
