@@ -14,7 +14,7 @@ variable "env" {
     default = 
   
 }
-variable "subnet_id_1" {
+variable "public_subnet_cidr" {
     default = 
   
 }
