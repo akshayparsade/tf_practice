@@ -28,6 +28,6 @@ variable "key_pair" {
 variable "security_groups_id" {
   default = ""
 }
-variable "" {
-  
+variable "pri_sub_id" {
+  default = 
 }
