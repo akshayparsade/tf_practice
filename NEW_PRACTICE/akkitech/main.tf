@@ -1,3 +1,4 @@
-resource "regio" "name" {
+provider "aws" {
+    
   
 }
