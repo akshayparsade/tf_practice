@@ -4,7 +4,7 @@ variable "cidr" {
 }
 
 variable "cidr_block" {
-  def
+  default = 
 }
 
 variable "project" {
