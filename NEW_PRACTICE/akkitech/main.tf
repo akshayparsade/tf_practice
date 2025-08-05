@@ -18,5 +18,6 @@ module "akkitech_ec2" {
   instance_type = var.instance_type
   key_pair = var.key_pair
   security_groups_id = var.security_groups_id
-  private_subnet_id = var
+  private_subnet_id = var.pri_sub_id
+  p
 }
