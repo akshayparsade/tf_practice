@@ -1,3 +1,3 @@
-resource "aws_instance" "akki" {
-  
+resource "aws_instance" "akkitech_instance" {
+  image
 }
