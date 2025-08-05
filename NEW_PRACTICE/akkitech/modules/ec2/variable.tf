@@ -13,3 +13,6 @@ variable "security_groups_id" {
 variable "private_subnet_id" {
     default = 
 }
+variable "public_subnet_id" {
+    default = 
+}
