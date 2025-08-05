@@ -8,5 +8,6 @@ module "akkitech_vpc" {
 cidr = 
 project = 
 env =
-pi
+private_subnet_cidr = 
+public_subnet_cidr = 
 }
