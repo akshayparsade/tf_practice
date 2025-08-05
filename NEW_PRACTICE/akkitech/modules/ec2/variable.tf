@@ -10,3 +10,6 @@ variable "key_pair" {
 variable "security_groups_id" {
     default = 
 }
+variable "image_id" {
+    default = 
+}
