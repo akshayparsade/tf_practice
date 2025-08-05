@@ -16,6 +16,9 @@ variable "public_subnet_cidr" {
 
 ### EC2 #####
 
+variable "image_id" {
+  default = 
+}
 variable "" {
   
 }
