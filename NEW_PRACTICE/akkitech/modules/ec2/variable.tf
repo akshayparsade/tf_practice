@@ -1,7 +1,7 @@
 variable "image_id" {
     default = 
 }
-variable "image_id" {
+variable "instance_type" {
     default = 
 }
 variable "image_id" {
