@@ -20,5 +20,8 @@ variable "image_id" {
   default = 
 }
 variable "instance_type" {
-  default = "t"
+  default = "t2.micro"
+}
+variable "" {
+  
 }
