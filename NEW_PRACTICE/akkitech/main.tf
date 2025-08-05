@@ -3,6 +3,7 @@ provider "aws" {
   
 }
 
-module "" {
+module "akkitech_vpc" {
+    
   
 }
