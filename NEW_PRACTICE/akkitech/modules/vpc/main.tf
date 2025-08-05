@@ -27,3 +27,11 @@ resource "aws_subnet" "akkitech_private_subnet" {
     env = var.env
   }
 }
+
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.main.id
+
+  tags = {
+    Name = "my-igw"
+  }
+}
