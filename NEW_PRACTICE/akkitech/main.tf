@@ -38,5 +38,6 @@ resource "aws_security_group" "lc_sg" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
   depends_on = [ 
-    module.akkitech_vpc]
+    module.akkitech_vpc
+    ]
 }
