@@ -16,5 +16,6 @@ module "akkitech_ec2" {
   source = "./modules/ec2"
   ami = var.image_id
   instance_type = var.instance_type
-  key_pair = var.
+  key_pair = var.key_pair
+  
 }
