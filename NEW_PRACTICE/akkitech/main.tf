@@ -4,6 +4,6 @@ provider "aws" {
 }
 
 module "akkitech_vpc" {
- source = "./"
+ source = "./modules/vpc"
   
 }
