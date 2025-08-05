@@ -10,6 +10,6 @@ variable "key_pair" {
 variable "security_groups_id" {
     default = 
 }
-variable "image_id" {
+variable "private_subnet_id" {
     default = 
 }
