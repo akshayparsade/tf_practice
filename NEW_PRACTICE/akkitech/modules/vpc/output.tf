@@ -3,7 +3,7 @@ output "private_subnet_id" {
 }
 
 output "public_subnet_id" {
-  value = module.akkitech_vpc.public_subnet_id
+  value = aws_subnet.akkitech_public_subnet.id
 }
 
 output "vpc_id" {
