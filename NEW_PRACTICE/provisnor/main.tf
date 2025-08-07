@@ -24,7 +24,8 @@ resource "aws_instance" "count_ec2" {
          ]
          connection {
            type = "ssh"
-           user = "ec2"
+           user = "ec2-user"
+           private_key = 
          }
       
     }
