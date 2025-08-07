@@ -31,6 +31,7 @@ resource "aws_instance" "for_each_ec2" {
     }   
 }
 
-variable "" {
+variable "instance_type" {
+    
   
 }
