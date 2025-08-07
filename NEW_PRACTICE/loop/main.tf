@@ -1,3 +1,4 @@
-resource "aws_instance" "name" {
+resource "aws_instance" "loop_ec2" {
+    
   
 }
