@@ -4,7 +4,7 @@ resource "aws_instance" "loop_ec2" {
     key_name = "New-Virgi-key"
     tags = {
       Name = "instance-${value}"
-      EN
+      Env = terr
     }
   
 }
