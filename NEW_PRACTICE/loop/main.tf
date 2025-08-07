@@ -4,7 +4,7 @@ provider "aws" {
 }
 #-LOOPS-#
 
-# count
+# count - simple 
 # for
 # for each
 
