@@ -14,3 +14,7 @@ provider "aws" {
 #     }
   
 # }
+
+resource "" "name" {
+  
+}
