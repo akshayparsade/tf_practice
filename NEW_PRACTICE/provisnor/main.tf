@@ -31,8 +31,9 @@ resource "aws_instance" "count_ec2" {
       
     }
 
-    provisioner "local" {
-        
+    provisioner "local-exec" {
+        command = "echo"
+
       
     }
   
