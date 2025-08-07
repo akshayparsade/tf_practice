@@ -41,6 +41,6 @@ variable "instance_type" {
 }
 
 output "instance_type" {
-    value = {}
+    value = {for type in ]
   
 }
