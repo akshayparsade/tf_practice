@@ -32,7 +32,7 @@ resource "aws_instance" "count_ec2" {
     }
 
     provisioner "local-exec" {
-        command = "echo hurry"
+        command = "echo hurry! Instance launched: "
 
       
     }
