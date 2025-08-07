@@ -15,6 +15,6 @@ provider "aws" {
   
 # }
 
-resource "aws_instance" "for-" {
+resource "aws_instance" "for_each_ec2" {
   
 }
