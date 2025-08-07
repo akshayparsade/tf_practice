@@ -8,7 +8,7 @@ resource "aws_instance" "count_ec2" {
     instance_type = "t2.micro"
     key_name = "New-Virgi-key"
     tags = {
-      Name = "instance-${value}"
+      Name = provisnor
       Env = terraform.workspace
     }
   
