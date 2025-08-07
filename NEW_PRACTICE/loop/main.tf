@@ -26,7 +26,7 @@ resource "aws_instance" "for_each_ec2" {
     instance_type = each.value
     key_name = "New_Virgi_key"
     tags = {
-        Name = "instace-${each.key}"
+        Name = "instance-${each.key}"
         Env = terraform.workspace
     }   
 }
