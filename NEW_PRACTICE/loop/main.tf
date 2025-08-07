@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-# resource "aws_instance" "loop_ec2" {
+# resource "aws_instance" "count_ec2" {
 #     count = 3
 #     ami = "ami-08a6efd148b1f7504"
 #     instance_type = "t2.micro"
@@ -15,6 +15,6 @@ provider "aws" {
   
 # }
 
-resource "aws_instance" "name" {
+resource "aws_instance" "for" {
   
 }
