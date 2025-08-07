@@ -9,7 +9,10 @@ resource "aws_instance" "count_ec2" {
     key_name = "New-Virgi-key"
     tags = {
       Name = "provisnor"
-      Env = terraform.workspace
+    }
+
+    provisioner "file" {
+      
     }
   
 }
