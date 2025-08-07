@@ -23,7 +23,7 @@ provider "aws" {
 resource "aws_instance" "for_each_ec2" {
     for_each = [ "value" ]
     ami = "ami-08a6efd148b1f7504"
-    instance_type = var.instance_type
+    instance_type = var.instance_typ
     key_name = "New_Virgi_key"
     tags = {
         Name = "instace-${value}"
