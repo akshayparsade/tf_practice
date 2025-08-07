@@ -46,6 +46,6 @@ output "instance_type" {
 }
 
 output "public_ip" {
-    value = [for ip in aws_instance.for_each_ec2.public_ip]
+    value = [for ip in aws_instance.for_each_ec2.public_ip : "$"]
   
 }
