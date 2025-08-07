@@ -4,4 +4,4 @@ sudo -i
 yum update -y
 yum install httpd -y
 systemctl start httpd 
-touch file
+touch file.tf
