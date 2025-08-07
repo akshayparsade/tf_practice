@@ -16,5 +16,10 @@ resource "aws_instance" "count_ec2" {
        destination = "/opt/script.sh"
 
     }
+
+    provisioner "remote-exec" {
+        
+      
+    }
   
 }
