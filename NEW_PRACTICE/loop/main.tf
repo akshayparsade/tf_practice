@@ -45,6 +45,7 @@ output "instance_type" {
 
 }
 
-output "name" {
+output "public_ip" {
+    value = []
   
 }
