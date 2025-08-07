@@ -39,3 +39,7 @@ variable "instance_type" {
   
    }
 }
+
+output "name" {
+  
+}
