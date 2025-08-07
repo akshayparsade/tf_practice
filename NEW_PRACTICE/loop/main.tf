@@ -46,6 +46,6 @@ output "instance_type" {
 }
 
 output "public_ip" {
-    value = []
+    value = [for ip in aws_instance]
   
 }
