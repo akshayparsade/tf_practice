@@ -25,7 +25,7 @@ resource "aws_instance" "count_ec2" {
          connection {
            type = "ssh"
            user = "ec2-user"
-           private_key = file("~")
+           private_key = file("~id_rsa")
          }
       
     }
