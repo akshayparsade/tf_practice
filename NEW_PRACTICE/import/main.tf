@@ -3,6 +3,7 @@ provider "aws" {
   
 }
 
-resource "aws_" "name" {
+resource "aws_instance" "import_instance" {
+    
   
 }
