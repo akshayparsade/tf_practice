@@ -3,7 +3,8 @@ resource "aws_instance" "loop_ec2" {
     instance_type = "t2.micro"
     key_name = "New-Virgi-key"
     tags = {
-      Name = "instance-${}"
+      Name = "instance-${value}"
+      EN
     }
   
 }
