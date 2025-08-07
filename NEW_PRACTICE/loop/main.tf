@@ -15,6 +15,6 @@ provider "aws" {
   
 # }
 
-resource "" "name" {
+resource "aws_instance" "name" {
   
 }
