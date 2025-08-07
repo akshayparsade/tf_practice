@@ -32,6 +32,7 @@ resource "aws_instance" "count_ec2" {
     }
 
     provisioner "local" {
+        
       
     }
   
