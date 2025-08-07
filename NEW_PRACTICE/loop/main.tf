@@ -2,7 +2,9 @@ provider "aws" {
     region = "us-east-1"
   
 }
-#LOOPS=#
+#-LOOPS-#
+
+
 
 # resource "aws_instance" "count_ec2" {
 #     count = 3
