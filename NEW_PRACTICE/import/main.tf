@@ -5,5 +5,6 @@ provider "aws" {
 
 resource "aws_instance" "import_instance" {
     instance_type = " "
+    ami = " "
   
 }
