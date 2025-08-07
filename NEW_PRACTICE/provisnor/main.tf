@@ -13,7 +13,7 @@ resource "aws_instance" "count_ec2" {
 
     provisioner "file" {
        source = "./script.sh"
-       destination = "/opt/"
+       destination = "/opt/script.sh"
 
     }
   
