@@ -40,6 +40,7 @@ variable "instance_type" {
    }
 }
 
-output "name" {
+output "instance_type" {
+    value = {}
   
 }
