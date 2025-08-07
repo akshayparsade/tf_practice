@@ -1,4 +1,8 @@
 provider "aws" {
-    region = "us-"
+    region = "us-east-1"
+  
+}
+
+resource "aws_" "name" {
   
 }
