@@ -32,6 +32,7 @@ resource "aws_instance" "for_each_ec2" {
 }
 
 variable "instance_type" {
-    
+    micro = t2.micro
+    s
   
 }
