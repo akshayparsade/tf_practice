@@ -30,3 +30,7 @@ resource "aws_instance" "for_each_ec2" {
         Env = terraform.workspace
     }   
 }
+
+variable "" {
+  
+}
