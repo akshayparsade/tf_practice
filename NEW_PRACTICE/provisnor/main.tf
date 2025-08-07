@@ -23,7 +23,8 @@ resource "aws_instance" "count_ec2" {
             "bash /opt/script.sh"
          ]
          connection {
-           
+           type = "ssh"
+           user
          }
       
     }
