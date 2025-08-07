@@ -33,9 +33,9 @@ resource "aws_instance" "for_each_ec2" {
 
 variable "instance_type" {
    default = {
-       micro = t2.micro
+       micro = "t2.micro"
        small = t2.small
-    medium = t2.medium
+       medium = t2.medium
   
    }
 }
