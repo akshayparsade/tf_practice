@@ -1,4 +1,5 @@
 resource "aws_instance" "loop_ec2" {
-    ami = 
+    ami = "ami-08a6efd148b1f7504"
+    type
   
 }
