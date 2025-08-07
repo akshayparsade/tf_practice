@@ -25,5 +25,7 @@ resource "aws_instance" "for_each_ec2" {
     ami = "ami-08a6efd148b1f7504"
     instance_type = var.instance_type
     key_name = "New_Virgi_key"
-    tags   
+    tags = {
+        
+    }   
 }
