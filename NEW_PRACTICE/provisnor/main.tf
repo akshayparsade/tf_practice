@@ -20,8 +20,11 @@ resource "aws_instance" "count_ec2" {
     provisioner "remote-exec" {
         inline = [ 
             "sudo -i", 
-            "bash /opt/"
+            "bash /opt/script.sh"
          ]
+         connection {
+           
+         }
       
     }
   
