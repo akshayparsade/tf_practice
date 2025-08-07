@@ -26,9 +26,10 @@ resource "aws_instance" "count_ec2" {
            type = "ssh"
            user = "ec2-user"
            private_key = file("~/id_rsa")
-           host = 
+           host = self.public_ip
          }
       
     }
+    
   
 }
