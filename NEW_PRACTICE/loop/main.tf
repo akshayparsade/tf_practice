@@ -1,3 +1,6 @@
+provider "aws" {
+  
+}
 resource "aws_instance" "loop_ec2" {
     count = 3
     ami = "ami-08a6efd148b1f7504"
