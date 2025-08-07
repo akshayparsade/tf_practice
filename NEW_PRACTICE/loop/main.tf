@@ -5,8 +5,8 @@ provider "aws" {
 #-LOOPS-#
 
 # count - simple loop
-# for - variable 
-# for each
+# for - variable and output
+# for each - 
 
 # resource "aws_instance" "count_ec2" {
 #     count = 3
