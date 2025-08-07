@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo -i
-apt update -y
+yum update -y
