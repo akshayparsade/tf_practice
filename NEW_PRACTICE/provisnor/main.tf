@@ -1,4 +1,7 @@
-
+provider "aws" {
+    region = ""
+  
+}
 
 resource "aws_instance" "count_ec2" {
  #   count = 3
