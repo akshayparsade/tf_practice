@@ -2,4 +2,5 @@
 
 sudo -i
 yum update -y
-yum install
+yum install httpd -y
+
