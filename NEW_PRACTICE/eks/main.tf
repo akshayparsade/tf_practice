@@ -131,3 +131,96 @@ resource "aws_eks_node_group" "managed_nodes" {
 }
 
 
+##########################
+# Networking (VPC + subnets + IGW + route tables)
+##########################
+resource "aws_vpc" "eks_vpc" {
+  cidr_block           = var.vpc_cidr
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+  tags = {
+    Name = "eks-vpc"
+  }
+}
+
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.eks_vpc.id
+  tags = { Name = "eks-igw" }
+}
+
+# Public subnets
+resource "aws_subnet" "public" {
+  count                   = length(var.public_subnet_cidrs)
+  vpc_id                  = aws_vpc.eks_vpc.id
+  cidr_block              = var.public_subnet_cidrs[count.index]
+  map_public_ip_on_launch = true
+  availability_zone       = data.aws_availability_zones.available.names[count.index]
+  tags = {
+    Name = "eks-public-${count.index + 1}"
+  }
+}
+
+# Private subnets
+resource "aws_subnet" "private" {
+  count             = length(var.private_subnet_cidrs)
+  vpc_id            = aws_vpc.eks_vpc.id
+  cidr_block        = var.private_subnet_cidrs[count.index]
+  availability_zone = data.aws_availability_zones.available.names[count.index]
+  tags = {
+    Name = "eks-private-${count.index + 1}"
+  }
+}
+
+resource "aws_route_table" "public_rt" {
+  vpc_id = aws_vpc.eks_vpc.id
+  tags = { Name = "eks-public-rt" }
+}
+
+resource "aws_route" "default_route" {
+  route_table_id         = aws_route_table.public_rt.id
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = aws_internet_gateway.igw.id
+}
+
+resource "aws_route_table_association" "public_assoc" {
+  count          = length(aws_subnet.public)
+  subnet_id      = aws_subnet.public[count.index].id
+  route_table_id = aws_route_table.public_rt.id
+}
+
+##########################
+# Data: availability zones
+##########################
+data "aws_availability_zones" "available" {}
+
+##########################
+# Security groups
+##########################
+# SG for EKS control plane to allow communication with worker nodes
+resource "aws_security_group" "eks_cluster_sg" {
+  name        = "eks-cluster-sg"
+  description = "Allow communication between EKS control plane and nodes"
+  vpc_id      = aws_vpc.eks_vpc.id
+}
+
+# Node SG - allow all within VPC and allow outbound
+resource "aws_security_group" "eks_node_sg" {
+  name        = "eks-node-sg"
+  description = "Security group for EKS worker nodes"
+  vpc_id      = aws_vpc.eks_vpc.id
+
+  ingress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = [var.vpc_cidr]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
