@@ -1,3 +1,3 @@
-resource "aws_iam_role" "name" {
+resource "aws_iam_role" "eks_cluster" {
   
 }
