@@ -28,7 +28,7 @@ variable "private_subnet_cidrs" {
 
 variable "node_instance_types" {
   type    = list(string)
-  default = ["t3.medium"]
+  default = ["t2.micro"]
 }
 
 variable "desired_capacity" {
