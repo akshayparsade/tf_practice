@@ -1,3 +1,3 @@
-resource "aws_iam" "name" {
+resource "aws_iam_role "n" {
   
 }
