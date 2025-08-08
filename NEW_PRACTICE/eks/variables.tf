@@ -8,7 +8,7 @@ variable "aws_region" {
 
 variable "cluster_name" {
   type    = string
-  default = "demo-eks-cluster"
+  default = "akkitech-eks-cluster"
 }
 
 variable "vpc_cidr" {
